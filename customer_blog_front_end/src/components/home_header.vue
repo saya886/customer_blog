@@ -1,86 +1,105 @@
 <template>
-<div id="content_header">
+<div class="main">
+    <div class="header">
+        <div class="logo"></div>
+        <div class="menu">
 
-<div class="nav">
-    <div class="logo">
-
-    </div>
-
-    <div class="nav_button_list">
-        <div class="nav_button">
-            <div class="nav_button_tip"></div>
-            <div class="nav_button_contnet">Home</div>
-        </div>
-        <div class="nav_button">
-            <div class="nav_button_tip"></div>
-            <div class="nav_button_contnet">About</div>
-        </div>
-        <div class="nav_button">
-            <div class="nav_button_tip"></div>
-            <div class="nav_button_contnet">Programs
-                <div class="drop_down_menu">
-                    <div class="drop_down_menu_item"><a href="#">Curated Programs</a></div>
-                    <div class="drop_down_menu_item"><a href="#">Programs China</a></div>
-                    <div class="drop_down_menu_item"><a href="#">Curated China</a></div>
+            <div class="nva_item">
+                <div class="nav_tip"></div>
+                <div class="nav_link">Home</div>
+                <div class="nav_drop_down">
+                    <div class="nav_drop_down_item">
+                        <a href="#">你好</a>
+                    </div>
                 </div>
             </div>
-            
-        </div>
-        <div class="nav_button">
-            <div class="nav_button_tip"></div>
-            <div class="nav_button_contnet">Blogs</div>
-        </div>
-        <div class="nav_button">
-            <div class="nav_button_tip"></div>
-            <div class="nav_button_contnet">Contact</div>
-        </div>
-        <div class="nav_button">
-            <div class="nav_button_tip_"></div>
-            <div class="nav_button_contnet_">:</div>
-        </div>
-        <div class="nav_button">
-            <div class="nav_button_tip_"></div>
-            <div class="nav_button_contnet_">中文</div>
-        </div>
-        <div class="nav_button">
-            <div class="nav_button_tip_"></div>
-            <div class="nav_button_contnet_1">ENQUIRE</div>
+
+            <div class="nva_item">
+                <div class="nav_tip"></div>
+                <div class="nav_link">About</div>
+                <div class="nav_drop_down">
+                    <div class="nav_drop_down_item">
+                        <a href="#">你好</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nva_item">
+                <div class="nav_tip"></div>
+                <div class="nav_link">Programs</div>
+                <div class="nav_drop_down">
+                    <div class="nav_drop_down_item">
+                        <a href="#">Curated Programs</a>
+                    </div>
+                    <div class="nav_drop_down_item">
+                        <a href="#">Programs China</a>
+                    </div>
+                    <div class="nav_drop_down_item">
+                        <a href="#">CuratedChina</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nva_item">
+                <div class="nav_tip"></div>
+                <div class="nav_link">Blogs</div>
+                <div class="nav_drop_down">
+                    <div class="nav_drop_down_item">
+                        <a href="#">你好</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nva_item">
+                <div class="nav_tip"></div>
+                <div class="nav_link">Contact</div>
+                <div class="nav_drop_down">
+                    <div class="nav_drop_down_item">
+                        <a href="#">你好</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nva_item nav_divider">
+                <div class="nav_link">:</div>
+            </div>
+
+            <div class="nva_item">
+                <div class="nav_link">中文</div>
+            </div>
+
+            <div class="nva_item nva_buttom">
+                <div class="nav_link">ENQUIRE</div>
+            </div>
+
         </div>
     </div>
-</div>
-
-<div class="content_1">
-    <div class="title_list">
-    <div class="title">Broaden your horizon</div>
-    <div class="title">by a curated study tour in China</div>
+    <div class="content_1">
+        <div class="title_1 title">Broaden your horizon</div>
+        <div class="title">by a curated study tour in China</div>
+        <div class="divider"></div>
+        <div class="icon_group">
+            <div class="icon_ietm">
+                <div class="icon_image icon_image_edu"></div>
+                <div class="icon_content">
+                    Educational
+                </div>
+            </div>
+            <div class="icon_ietm">
+                <div class="icon_image icon_image_ins"></div>
+                <div class="icon_content">
+                    Insightful
+                </div>
+            </div>
+            <div class="icon_ietm">
+                <div class="icon_image icon_image_dyn"></div>
+                <div class="icon_content">
+                    Dynamic
+                </div>
+            </div>
+        </div>
+        <div class="center_button">Unlock Trips</div>
     </div>
-</div>
-
-<div class="content_2">
-    <div class="item_list">
-        <div class="item">
-            <div class="item_icon item_icon_0"></div>
-            <div class="item_content">Education</div>
-        </div>
-
-        <div class="item">
-            <div class="item_icon item_icon_1"></div>
-            <div class="item_content">Insightful</div>
-        </div>
-
-        <div class="item">
-            <div class="item_icon item_icon_2"></div>
-            <div class="item_content">Dynamic</div>
-        </div>
-    </div>
-    
-</div>
-
-<div class="content_3">
-    
-    <div class="button_item">Unlock Trips</div>
-</div>
-
 </div>
 </template>
 
@@ -91,194 +110,180 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.nav{
-    .logo{
-        background-image: url(../assets/logo.png);
-        position: absolute;
+.main{
+    height: 899px;
+    
+    background:url("../assets/home_header_dark.png") no-repeat center center;
+    background-size: cover;
+}
+
+.header{
+    height: 100px;
+    // background: rgba(255, 0, 0, 0.445);
+}
+.logo{
+    background: red;
+    height: 100%;
+    width: 230px;
+    float: left;
+    margin-left: 120px; 
+    background:url("../assets/logo.png") no-repeat center center;
+}
+.menu{
+    // background: red;
+    width: 930px;
+    height: 100%;
+    float: right;   
+}
+
+.title{
+    // background: red;
+    
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 1000px;  
+    height: 70px;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 8px #000000;
+}
+.title_1{
+    margin-top:130px; 
+}
+.divider{
+    background: red;
+    
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 1211px;  
+    height: 15px;
+    background:url("../assets/divider_1_white.png") no-repeat center center;
+}
+.icon_group{
+    // background: red;
+    
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 550px;  
+    height: 130px;
+    // padding: 5px;
+    .icon_ietm{
+        display: inline-block;
+        // background: green;
+        width: 32%;
         height: 100%;
-        width: 100%;
-        background-repeat:no-repeat;
-        top: 5rem;
-        left: 10rem;
-    }
-
-    .nav_button_list{
-        position: absolute;
-        right: 10rem;
-        height: 10rem;
-        display: flex;
-        flex-direction: row;
-        // background: gray;
-        .nav_button{
-            display: flex;
-            flex-direction: column;
-            justify-content:space-between;
-            // background: rgba(94, 94, 94, 0.164);
-
+        padding: 2px;
+        .icon_image{
+            // background: red;
+            height: 100px;
             
-            .nav_button_tip{
-                height: 0.6rem;
-                // background: red;
-            }
-            .nav_button_contnet{
-                padding: 0.7rem 1.2rem 0.7rem 1.2rem;
-                color: white;
-                font-size: 1.7rem;
-                // font-family:"font-family:Arial,Helvetica";
-                font-weight:500;
-            }
-            .nav_button_contnet_{
-                padding: 0.7rem 1.2rem 0.7rem 1.2rem;
-                color: white;
-                font-size: 1.7rem;
-            }
-            .nav_button_contnet_1{
-                padding: 0.7rem 1.2rem 0.7rem 1.2rem;
-                margin-left: 1rem;
-                color: white;
-                font-size: 1.7rem;
-                background: rgb(172, 0, 0);
-                // font-family:"font-family:Arial,Helvetica";
-            }
-            .drop_down_menu{
-                margin-top: 0.5rem;
-                display: none;
-                position: absolute;
-                background: rgba(128, 128, 128, 0.685);
-                
-                .drop_down_menu_item{
-                    padding: 1.2rem 2.6rem;
-                    a{
-                        font-size: 1.7rem;
-                        color: white;
-                        // font-family:"font-family:Arial,Helvetica";
-                    }
-                }
-                .drop_down_menu_item:hover{
-                    background: rgb(255, 255, 255);
-                    a{
-                        color:rgb(74, 74, 74);
-                        // font-family:"font-family:Arial,Helvetica";
-                    }
-                }
-            }
         }
-        .nav_button:hover{
-            .nav_button_tip{
-                background: rgb(219, 0, 0);
-            }
+        .icon_image_edu{
+            background:url("../assets/edu.png") no-repeat center;
+        }
+        .icon_image_ins{
+            background:url("../assets/ins.png") no-repeat center;
+        }
+        .icon_image_dyn{
+            background:url("../assets/dyn.png") no-repeat center;
+        }
+        .icon_content{
+            text-align: center;
+            color: white;
+            font-size: 23px;
+            line-height: 24px;
+        }
 
-            .nav_button_contnet{
-                color: rgb(197, 197, 197);
-                cursor:default;
-                // background: rgba(114, 114, 114, 0.397);
+    }
+}
+.center_button{
+    height: 45px;
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 70px; 
+    
+    text-align: center;
+    border:4px solid white;
+    line-height: 45px;
+    font-size: 23px;
+    color: white;
+    cursor:pointer;
+    
+}
+.center_button:hover{
+    background: white;
+    color: black;
+}
+.nva_item{
+    position: relative;
+    // background: green;
+    width: 11%;
+    height: 100%;
+    margin-right:10px;
+    display: inline-block;
+    .nav_tip{
+        position: absolute;
+        // background: red;
+        height: 5px;
+        width: 100%;
+    }
+    .nav_link{
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+
+    }
+    .nav_link:hover{
+        cursor:pointer;
+    }
+    .nav_drop_down{
+        margin-top: 100px;
+        display: none;
+        position: absolute;
+        background: rgba(92, 92, 92, 0.404);
+        
+        width: 200px;
+        .nav_drop_down_item{
+            padding: 10px 20px 10px 20px;
+        }
+        .nav_drop_down_item:hover{
+            cursor:pointer;
+            background: white;
+            a{
+                color: black;
             }
-            .nav_button_contnet_{
-                color: rgb(197, 197, 197);
-                cursor:default;
-            }
-            .nav_button_contnet_1{
-                background: rgb(141, 0, 0);
-                cursor:default;
-            }
-            .drop_down_menu{
-                display: block;
-            }
+            
+        }
+        a{
+            color: white;
+            font-size: 20px;
         }
     }
 }
-
-#content_header{
-    background-image: url(../assets/wall7.png);
-    height: 80rem;
-    background-position: top;
-    background-size: cover;
-    background-repeat:no-repeat;
-
-    .content_1{
-        width: 100%;
-        top: 20rem;
-        position: absolute;
-
-        .title_list{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            
-            .title{
-                color: white;
-                font-size: 7rem;
-                text-shadow: 0px 0px 10px black;
-                
-            }
-        }
+.nva_item:hover{
+    .nav_drop_down{
+        display: block;
     }
-
-    .content_2{
-
-        position: absolute;
-        width: 100%;
-        top: 43rem;
-        .item_list{
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            .item{
-
-                .item_icon_0{
-                    background-image: url(../assets/edu.png);
-                    height: 100%;
-                    width: 100%;
-                    background-repeat:no-repeat;
-                    filter: hue-rotate(180deg);
-                }
-                .item_icon_1{
-                    background-image: url(../assets/ins.png);
-                    height: 100%;
-                    width: 100%;
-                    background-repeat:no-repeat;
-                }
-                .item_icon_2{
-                    background-image: url(../assets/dyn.png);
-                    height: 100%;
-                    width: 100%;
-                    background-repeat:no-repeat;
-                }
-                .item_content{
-                    color: white;
-                    text-align: center;
-                    font-size: 2.5rem;
-                }
-                height: 8rem;
-                width: 8rem;
-                margin: 0rem 4rem 0rem 4rem;
-                // background: red;
-                
-            }
-        }
-        
+    .nav_tip{
+        background: red;
     }
-
-    .content_3{
-        position: absolute;
-        width: 100%;
-        top: 63rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        .button_item{
-            // background: red;
-            border: 0.25rem solid white;
-            padding: 1rem;
-            font-size: 2.5rem;
-            color: white;
-        }
-        .button_item:hover{
-            background: white;
-            color: rgb(74, 74, 74);
-        }
-
+}
+.nav_divider{
+    width: 20px;
+    .nav_link:hover{
+        cursor:default;
+    }
+}
+.nva_buttom{
+    .nav_link{
+        background: red;
+        line-height: 30px;
+        height: 30px;
     }
 }
 </style>>
