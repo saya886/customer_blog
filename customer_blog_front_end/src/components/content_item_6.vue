@@ -23,7 +23,7 @@
 
         <div class="input_container">
             <div class="input_lable">
-                <div class="input_lable_tip input_lable_tip_gray">*</div>
+                <div class="input_lable_tip input_lable_tip_gray"></div>
                 <div class="input_lable_text">Telephone :</div>
             </div>
             <!-- <div class="input_item"></div> -->
@@ -71,7 +71,7 @@ export default {
 }
 .input_group{
     
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 80px;
     // background: rgb(117, 117, 117);
@@ -113,6 +113,7 @@ export default {
             color: gray;
         }
         .textarea_item{
+            width: 100%;
             margin-top: 20px;
             font-size: 18px;
             color: gray;

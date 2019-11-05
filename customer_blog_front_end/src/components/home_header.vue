@@ -60,9 +60,9 @@
                 </div>
             </div>
 
-            <div class="nva_item nav_divider">
+            <!-- <div class="nva_item nav_divider">
                 <div class="nav_link">:</div>
-            </div>
+            </div> -->
 
             <div class="nva_item">
                 <div class="nav_link">中文</div>
@@ -112,8 +112,8 @@ export default {
 <style lang="less" scoped>
 .main{
     height: 899px;
-    
-    background:url("../assets/home_header_dark.png") no-repeat center center;
+    background: gray;
+    // background:url("../assets/home_header_dark.png") no-repeat center center;
     background-size: cover;
 }
 
@@ -124,9 +124,9 @@ export default {
 .logo{
     background: red;
     height: 100%;
-    width: 230px;
+    width: 200px;
     float: left;
-    margin-left: 120px; 
+    margin-left: 100px; 
     background:url("../assets/logo.png") no-repeat center center;
 }
 .menu{
@@ -143,7 +143,7 @@ export default {
     margin-top: 10px;
     width: 1000px;  
     height: 70px;
-    font-size: 70px;
+    font-size: 60px;
     color: white;
     text-align: center;
     text-shadow: 5px 5px 8px #000000;
@@ -157,7 +157,7 @@ export default {
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 60px;
-    width: 1211px;  
+    width: 100%;  
     height: 15px;
     background:url("../assets/divider_1_white.png") no-repeat center center;
 }
@@ -189,6 +189,17 @@ export default {
         .icon_image_dyn{
             background:url("../assets/dyn.png") no-repeat center;
         }
+
+        .icon_image_edu:hover{
+            background:url("../assets/edu_1.png") no-repeat center;
+        }
+        .icon_image_ins:hover{
+            background:url("../assets/ins_1.png") no-repeat center;
+        }
+        .icon_image_dyn:hover{
+            background:url("../assets/dyn_1.png") no-repeat center;
+        }
+
         .icon_content{
             text-align: center;
             color: white;
@@ -280,9 +291,12 @@ export default {
     }
 }
 .nva_buttom{
+    // background: black;
     .nav_link{
-        background: red;
+        // padding: 5px;
+        background: rgb(187, 0, 0);
         line-height: 30px;
+        // font-size: 16px;
         height: 30px;
     }
 }

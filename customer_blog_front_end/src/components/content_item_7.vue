@@ -39,6 +39,7 @@ export default {
     background:url("../assets/logo.png") no-repeat center center;
 }
 .menu{
+    // width: 70%;
     margin-top: 98px;
     float: right;
     .menu_item{

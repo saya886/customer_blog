@@ -5,7 +5,7 @@
 <div class="main">
     <div class="main_item main_item_1">
         <div class="main_content">
-        <div class="main_text">OUR STRENGTH 1</div>
+        <div class="main_text">OUR STRENGTH I</div>
         <div class="main_text">Focus exclusively on China </div>
         <div class="main_text">to ensure delivering an in-depth study </div>
         <div class="main_text">tour without any superficial itinerary.</div>
@@ -13,7 +13,7 @@
     </div>
     <div class="main_item main_item_2">
         <div class="main_content">
-        <div class="main_text">OUR STRENGTH 2</div>
+        <div class="main_text">OUR STRENGTH II</div>
         <div class="main_text">Customize your study trip in China </div>
         <div class="main_text">to meet your pre-defined learning objectives and </div>
         <div class="main_text">maximize the value of your budget.</div>
@@ -21,7 +21,7 @@
     </div>
     <div class="main_item main_item_3">
         <div class="main_content">
-        <div class="main_text">OUR STRENGTH 3</div>
+        <div class="main_text">OUR STRENGTH III</div>
         <div class="main_text">Backed up by government guarantees and </div>
         <div class="main_text">partnered with various prestige universities, </div>
         <div class="main_text">institutions and enterprises.</div>
@@ -31,7 +31,7 @@
  
     <div class="main_item main_item_4">
         <div class="main_content">
-        <div class="main_text">OUR STRENGTH 4</div>
+        <div class="main_text">OUR STRENGTH IV</div>
         <div class="main_text">Provide a solid and resourceful platform to encourage </div>
         <div class="main_text">communication and entrepreneurship.</div>
         </div>

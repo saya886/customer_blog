@@ -1,7 +1,7 @@
 <template>
 <div >
     <div class="main">
-    <div class="title">CuratedChina</div>
+    <div class="title">&nbsp;&nbsp;  CuratedChina</div>
     <div class="divider"></div>
     <dir class="conetnt">Design, organize and facilitate tailor-made in-depth study tours around China for all academics and institutions worldwide. We specialize in offering practical interactions with various enterprises and entrepreneurs operated in China to equip you with the latest insights from the Chinese market.</dir>
     </div>
@@ -27,14 +27,14 @@ export default {
 <style lang="less" scoped>
 .main{
     // background: red;
-    height: 500px;
+    height: 650px;
     width: 1200px;
     margin: 0 auto;
 }
 .title{
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: center;
-    color: black;
+    color: rgb(87, 87, 87);
     font-size: 50px;
 }
 .divider{
@@ -48,7 +48,7 @@ export default {
     background:url("../assets/divider_1_black.png") no-repeat center center;
 }
 .conetnt{
-    color: black;
+    color: rgb(83, 83, 83);
     font-size: 30px;
     line-height: 45px;
 }

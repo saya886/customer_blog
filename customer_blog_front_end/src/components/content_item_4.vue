@@ -3,7 +3,7 @@
     <div class="item">
         <div class="title">Testimonials</div>
         <div class="divider"></div>
-        <div class="text_item">“We specialize in offering practical interactions with various 
+        <div class="text_item">“We specialize in offering practical interactions with various
 enterprises and entrepreneurs operated in China to equip you with the latest insights from the Chinese market.”</div>
         <div class="icon_group">
             <div class="icon_ietm">
@@ -59,7 +59,7 @@ export default {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 60px;
-    width: 1211px;  
+    width: 100%;  
     height: 15px;
     background:url("../assets/divider_1_black.png") no-repeat center center;
 }
@@ -67,6 +67,7 @@ export default {
     text-align: center;
     color: rgb(82, 82, 82);;
     font-size: 24px;
+    line-height: 45px;
     width: 650px;
     margin: 0 auto;
 }
@@ -75,7 +76,7 @@ export default {
     
     margin: 0 auto;
     margin-top: 250px;
-    width: 1100px;  
+    width: 100%;  
     height: 300px;
     // padding: 5px;
     .icon_ietm{
