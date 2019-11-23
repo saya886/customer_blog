@@ -14,14 +14,15 @@
 @font-face
 {
     font-family: gillsans_light;
-    src: url(./assets/gillsans.ttf);
+    src: url(./assets/GillSansMT.ttf);
 }
+
 
 * {
     margin: 0;
     padding: 0;
     font-size: 10px;
-    font-family: Gill Sans MT Light,chinese_font;
+    font-family: 'gillsans_light';
     user-select: none;
     // font-weight:100;
 }

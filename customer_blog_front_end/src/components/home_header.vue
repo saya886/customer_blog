@@ -142,7 +142,7 @@ export default {
     margin: 0 auto;
     margin-top: 10px;
     width: 1000px;  
-    height: 70px;
+    height: 60px;
     font-size: 60px;
     color: white;
     text-align: center;
