@@ -75,7 +75,7 @@ export default {
     // background: red;
     
     margin: 0 auto;
-    margin-top: 250px;
+    margin-top: 150px;
     width: 100%;  
     height: 300px;
     // padding: 5px;

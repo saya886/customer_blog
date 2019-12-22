@@ -13,8 +13,14 @@
 
 @font-face
 {
-    font-family: gillsans_light;
+    font-family: gillsans_;
     src: url(./assets/GillSansMT.ttf);
+}
+
+@font-face
+{
+    font-family: gillsans_light;
+    src: url(./assets/gillsans_light.ttf);
 }
 
 
@@ -22,8 +28,8 @@
     margin: 0;
     padding: 0;
     font-size: 10px;
-    font-family: 'gillsans_light';
-    user-select: none;
+    font-family: 'gillsans_';
+    // user-select: none;
     // font-weight:100;
 }
 div{

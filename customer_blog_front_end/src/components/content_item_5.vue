@@ -108,6 +108,10 @@ export default {
     color: white;
     cursor:pointer;
 }
+.button_cust:hover{
+    background: white;
+    color: black;
+}
 .abs_img_1{
     height: 466px;
     width: 72px;

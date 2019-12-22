@@ -56,4 +56,7 @@ a{ text-decoration:none}
 //     background-repeat:no-repeat;
 
 // }
+// *:not(input) {
+//   -webkit-user-select: none;
+// }
 </style>

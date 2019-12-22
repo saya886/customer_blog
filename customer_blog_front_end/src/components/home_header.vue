@@ -1,79 +1,6 @@
 <template>
 <div class="main">
-    <div class="header">
-        <div class="logo"></div>
-        <div class="menu">
-
-            <div class="nva_item">
-                <div class="nav_tip"></div>
-                <div class="nav_link">Home</div>
-                <div class="nav_drop_down">
-                    <div class="nav_drop_down_item">
-                        <a href="#">你好</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="nva_item">
-                <div class="nav_tip"></div>
-                <div class="nav_link">About</div>
-                <div class="nav_drop_down">
-                    <div class="nav_drop_down_item">
-                        <a href="#">你好</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="nva_item">
-                <div class="nav_tip"></div>
-                <div class="nav_link">Programs</div>
-                <div class="nav_drop_down">
-                    <div class="nav_drop_down_item">
-                        <a href="#">Curated Programs</a>
-                    </div>
-                    <div class="nav_drop_down_item">
-                        <a href="#">Programs China</a>
-                    </div>
-                    <div class="nav_drop_down_item">
-                        <a href="#">CuratedChina</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="nva_item">
-                <div class="nav_tip"></div>
-                <div class="nav_link">Blogs</div>
-                <div class="nav_drop_down">
-                    <div class="nav_drop_down_item">
-                        <a href="#">你好</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="nva_item">
-                <div class="nav_tip"></div>
-                <div class="nav_link">Contact</div>
-                <div class="nav_drop_down">
-                    <div class="nav_drop_down_item">
-                        <a href="#">你好</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="nva_item nav_divider">
-                <div class="nav_link">:</div>
-            </div> -->
-
-            <div class="nva_item">
-                <div class="nav_link">中文</div>
-            </div>
-
-            <div class="nva_item nva_buttom">
-                <div class="nav_link">ENQUIRE</div>
-            </div>
-
-        </div>
-    </div>
+    <header_menu/>
     <div class="content_1">
         <div class="title_1 title">Broaden your horizon</div>
         <div class="title">by a curated study tour in China</div>
@@ -104,8 +31,11 @@
 </template>
 
 <script>
+import header_menu from './header_menu.vue'
 export default {
-
+    components: {
+        header_menu
+    }
 }
 </script>
 
@@ -117,24 +47,6 @@ export default {
     background-size: cover;
 }
 
-.header{
-    height: 100px;
-    // background: rgba(255, 0, 0, 0.445);
-}
-.logo{
-    background: red;
-    height: 100%;
-    width: 200px;
-    float: left;
-    margin-left: 100px; 
-    background:url("../assets/logo.png") no-repeat center center;
-}
-.menu{
-    // background: red;
-    width: 930px;
-    height: 100%;
-    float: right;   
-}
 
 .title{
     // background: red;
@@ -226,78 +138,5 @@ export default {
 .center_button:hover{
     background: white;
     color: black;
-}
-.nva_item{
-    position: relative;
-    // background: green;
-    width: 11%;
-    height: 100%;
-    margin-right:10px;
-    display: inline-block;
-    .nav_tip{
-        position: absolute;
-        // background: red;
-        height: 5px;
-        width: 100%;
-    }
-    .nav_link{
-        text-align: center;
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
-        color: white;
-        font-size: 20px;
-
-    }
-    .nav_link:hover{
-        cursor:pointer;
-    }
-    .nav_drop_down{
-        margin-top: 100px;
-        display: none;
-        position: absolute;
-        background: rgba(92, 92, 92, 0.404);
-        
-        width: 200px;
-        .nav_drop_down_item{
-            padding: 10px 20px 10px 20px;
-        }
-        .nav_drop_down_item:hover{
-            cursor:pointer;
-            background: white;
-            a{
-                color: black;
-            }
-            
-        }
-        a{
-            color: white;
-            font-size: 20px;
-        }
-    }
-}
-.nva_item:hover{
-    .nav_drop_down{
-        display: block;
-    }
-    .nav_tip{
-        background: red;
-    }
-}
-.nav_divider{
-    width: 20px;
-    .nav_link:hover{
-        cursor:default;
-    }
-}
-.nva_buttom{
-    // background: black;
-    .nav_link{
-        // padding: 5px;
-        background: rgb(187, 0, 0);
-        line-height: 30px;
-        // font-size: 16px;
-        height: 30px;
-    }
 }
 </style>>

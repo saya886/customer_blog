@@ -36,7 +36,7 @@
                 <div class="input_lable_text">Message :</div>
             </div>
             <!-- <div class="input_item"></div> -->
-            <textarea class="textarea_item" rows="20" cols="85">
+            <textarea class="textarea_item">
             </textarea>
         </div>
     </div>
@@ -96,7 +96,12 @@ export default {
         margin-top: 20px;
         width: 80%;
         height: 35px;
-        font-size: 35px;
+        font-size: 20px;
+          -webkit-user-select:auto; /*webkit浏览器*/  
+        user-select:auto;
+        -o-user-select:auto;
+        -ms-user-select:auto; 
+        line-height: 35px;
     }
     .input_container_1{
         margin-top: 20px;
@@ -115,8 +120,9 @@ export default {
         .textarea_item{
             width: 100%;
             margin-top: 20px;
-            font-size: 18px;
+            font-size: 10px;
             color: gray;
+            height: 300px;
         }
     }
 }
@@ -132,6 +138,12 @@ export default {
     cursor:pointer;
     margin: 0 auto;
     margin-top: 90px;
+    
+    
+}
+.center_cust_button:hover{
+    background: gray;
+    color: white;
 }
 .abs_img_3{
     height: 220px;
