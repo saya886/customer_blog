@@ -23,5 +23,6 @@
     "python.linting.pylintArgs": [
         "--init-hook",
         "import sys; sys.path.append('C:/Users/rango/.vscode/extensions/rt-thread.rt-thread-micropython-1.0.0/microExamples/code-completion')"
-    ]
+    ],
+    "python.pythonPath": "/usr/local/bin/python3"
 }

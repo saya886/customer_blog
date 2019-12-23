@@ -43,7 +43,7 @@ export default {
 .main{
     height: 899px;
     background: gray;
-    // background:url("../assets/home_header_dark.png") no-repeat center center;
+    background:url("../assets/img_3.png") no-repeat center center;
     background-size: cover;
 }
 
