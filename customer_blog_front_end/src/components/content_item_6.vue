@@ -120,7 +120,7 @@ export default {
         .textarea_item{
             width: 100%;
             margin-top: 20px;
-            font-size: 10px;
+            font-size: 16px;
             color: gray;
             height: 300px;
         }
