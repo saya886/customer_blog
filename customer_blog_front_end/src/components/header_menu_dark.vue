@@ -223,6 +223,9 @@ export default {
         height: 30px;
         color: white;
     }
+    .nav_link:hover{
+        cursor: pointer;
+    }
 }
 
 
