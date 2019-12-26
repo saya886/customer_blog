@@ -106,8 +106,8 @@ export default {
     z-index: 1;
     position: absolute;
     font-size: 30px;
-    bottom: -150px;
-    right: -150px;
+    bottom: 30px;
+    right: -200px;
     font-family: gillsans_light;
     color: gray;
     cursor: pointer;
@@ -134,6 +134,7 @@ export default {
 }
 .detail_button:hover{
     text-shadow: 0px 0px 20px #b1b1b1;
+    color: rgb(31, 31, 31);
 }
 
 </style>

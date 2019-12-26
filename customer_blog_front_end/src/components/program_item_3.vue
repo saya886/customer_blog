@@ -3,7 +3,7 @@
       <div class="content">
           <div class="text_1">Have more<br>
 specific demand?</div>
-          <div @click="change_route('contact')" class="button_">Contact Us</div>
+          <div @click="change_route('contact#enquire')" class="button_">Contact Us</div>
           <div class="text_2">We’ll do our best<br>
 to accommodate<br>
 your needs!</div>
@@ -35,19 +35,21 @@ export default {
     margin:0 auto;
 }
 .text_1{
-    padding-top: 70px;
+    padding-top: 190px;
     color: rgb(39, 39, 39);
-    font-size: 60px;
-    line-height: 75px;
+    font-size: 40px;
+    line-height: 40px;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
 }
 .text_2{
-    margin-top: 70px;
+    margin-top: 30px;
     color: rgb(39, 39, 39);
-    font-size: 60px;
-    line-height: 75px;
-    text-align: center
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1px;
 }
 .button_{
     width: 250px;

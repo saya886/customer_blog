@@ -5,7 +5,16 @@ import home from './views/home.vue'
 
 Vue.use(Router)
 
+const scrollBehavior = function (to, from, savedPosition) {
+  if (to.hash) {
+    return {
+      // 通过 to.hash 的值來找到对应的元素
+      selector: to.hash
+    }
+  }
+}
 export default new Router({
+  scrollBehavior,
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [

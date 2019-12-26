@@ -4,9 +4,12 @@ import router from './router'
 import store from './store'
 
 import i18n from './i18n'
-
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+ 
+Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
-
+Vue.prototype.$axios = axios
 
 
 new Vue({

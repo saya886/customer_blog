@@ -11,6 +11,7 @@ class blog_instance(models.Model):
         ("CULTURAL ADVENTURE", "CULTURAL ADVENTURE"), 
     ) 
     title = models.TextField()
+    author = models.TextField(default="")
     categary = models.CharField( 
         max_length = 200, 
         choices = categary_choice, 
@@ -18,6 +19,7 @@ class blog_instance(models.Model):
         )
     blog_img = models.ImageField(upload_to ='uploads/' + datetime.datetime.now().strftime("%Y%m%d%H%M%S")+'/', height_field=None, width_field=None, max_length=1000,default="uploads/default_blog.png",help_text="图片的大小务必是342x215")
     content = RichTextUploadingField()
+    
     push_time = models.DateTimeField(auto_now=True)
 
     def __str__(self):

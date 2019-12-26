@@ -39,12 +39,13 @@ export default {
     font-family: gillsans_light;
 }
 .title_2{
-    font-size: 70px;
+    font-size: 60px;
     color: white;
     margin: 0 auto;
-    margin-top:20px;
+    margin-top:60px;
     // width: 300px;
     text-align: center;
     text-shadow: 5px 5px 8px #000000;
+    letter-spacing: 2px;
 }
 </style>

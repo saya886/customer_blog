@@ -23,8 +23,8 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <!-- <div @click="change_route('about')" class="nav_link">About</div> -->
-                <div class="nav_link">About</div>
+                <div @click="change_route('about')" class="nav_link">About</div>
+                <!-- <div class="nav_link">About</div> -->
                 <div class="nav_drop_down">
                     
                 </div>
@@ -40,8 +40,8 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <!-- <div @click="change_route('blogs')" class="nav_link">Blogs</div> -->
-                <div class="nav_link">Blogs</div>
+                <div @click="change_route('blogs')" class="nav_link">Blogs</div>
+                <!-- <div class="nav_link">Blogs</div> -->
                 <div class="nav_drop_down">
                     
                 </div>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="nva_item nva_buttom">
-                <div @click="change_route('contact')" class="nav_link">ENQUIRE</div>
+                <div @click="change_route('contact#enquire')" class="nav_link">ENQUIRE</div>
             </div>
 
         </div>

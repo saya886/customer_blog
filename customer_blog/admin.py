@@ -4,7 +4,7 @@ from blog.models import *
 # Register your models here.
 
 class blog_instance_admin(admin.ModelAdmin):
-    list_display = ['title', 'content', 'push_time']
+    list_display = ['title', 'author','push_time']
 
 class program_instance_admin(admin.ModelAdmin):
     list_display = ['title_1', 'title_2', 'push_time']

@@ -39,10 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'ckeditor',
-    'ckeditor_uploader'
+    'ckeditor_uploader','corsheaders'
 ]
 
 MIDDLEWARE = [
+     'corsheaders.middleware.CorsMiddleware',  
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -51,6 +52,23 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+CORS_ORIGIN_ALLOW_ALL = True
+#下面这些可以不用设置
+ 
+CORS_ALLOW_METHODS = (  'DELETE',  'GET',  'OPTIONS',  'PATCH',  'POST',  'PUT',  'VIEW', )   
+CORS_ALLOW_HEADERS = (  
+'XMLHttpRequest',  
+'X_FILENAME',  
+'accept-encoding', 
+'authorization',  
+'content-type',  
+'dnt',
+'origin',  
+'user-agent',  
+'x-csrftoken',  
+'x-requested-with',  
+'Pragma', 
+) 
 
 ROOT_URLCONF = 'customer_blog.urls'
 
@@ -128,3 +146,12 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
  
 CKEDITOR_UPLOAD_PATH = 'upload/'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'skin': 'moono',
+        'height': 1000,
+        'width': 1500,
+    },
+}

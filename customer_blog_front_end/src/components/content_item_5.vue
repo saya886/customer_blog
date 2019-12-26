@@ -21,7 +21,7 @@
             <div class="value_item">Address : Room Road District Shanghai China</div>
         </div>
     </div>
-    <div class="button_cust">ENQUIRE</div>
+    <div @click="change_route('contact#enquire')" class="button_cust">ENQUIRE</div>
     </div>
 
     <div class="abs_img_1"></div>
@@ -31,7 +31,11 @@
 
 <script>
 export default {
-
+    methods:{
+        change_route(path){
+            this.$router.push(path)
+        }
+    }
 }
 </script>
 
@@ -111,6 +115,7 @@ export default {
 .button_cust:hover{
     background: white;
     color: black;
+    cursor: pointer;
 }
 .abs_img_1{
     height: 466px;

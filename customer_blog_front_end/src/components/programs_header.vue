@@ -28,9 +28,9 @@ export default {
 }
 .title_1{
     height:70px;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
-    margin-top:200px;
+    margin-top:150px;
     text-align: center;
     text-shadow: 5px 5px 8px #000000;
     font-weight: 100;
@@ -38,7 +38,7 @@ export default {
     font-family: gillsans_light;
 }
 .title_2{
-    font-size: 70px;
+    font-size: 50px;
     color: white;
     width: 70%;
     margin: 0 auto;
@@ -46,6 +46,7 @@ export default {
     // width: 300px;
     text-align: center;
     text-shadow: 5px 5px 8px #000000;
+    letter-spacing: 2px;
 
 }
 </style>

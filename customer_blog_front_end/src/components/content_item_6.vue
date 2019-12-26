@@ -1,4 +1,5 @@
 <template>
+<a id="enquire">
 <div class="main">
     <div class="title">ENQUIRE</div>
     <div class="text">A CuratedChina coordinator will reply to you within 24 hours. <br/>We look forward to hearing from you!</div>
@@ -9,7 +10,7 @@
                 <div class="input_lable_text">Name :</div>
             </div>
             <!-- <div class="input_item"></div> -->
-            <input class="input_item" type="text">
+            <input v-model="name" class="input_item" type="text">
         </div>
 
         <div class="input_container">
@@ -18,7 +19,7 @@
                 <div class="input_lable_text">Email :</div>
             </div>
             <!-- <div class="input_item"></div> -->
-            <input class="input_item" type="text">
+            <input v-model="mail" class="input_item" type="text">
         </div>
 
         <div class="input_container">
@@ -27,7 +28,7 @@
                 <div class="input_lable_text">Telephone :</div>
             </div>
             <!-- <div class="input_item"></div> -->
-            <input class="input_item" type="text">
+            <input v-model="tel" class="input_item" type="text">
         </div>
 
         <div class="input_container input_container_1">
@@ -36,18 +37,61 @@
                 <div class="input_lable_text">Message :</div>
             </div>
             <!-- <div class="input_item"></div> -->
-            <textarea class="textarea_item">
+            <textarea v-model="message" class="textarea_item">
             </textarea>
         </div>
     </div>
-    <div class="center_cust_button">SEND MY ENQUIRE</div>
+    <div class="error_msg">{{error_msg}}</div>
+    <div @click="send_enquire()" class="center_cust_button">SEND MY ENQUIRE</div>
     <div class="abs_img_3"></div>
 </div>
+</a>
 </template>
 
 <script>
 export default {
+    data(){
+        return{
+            "name":"",
+            "mail":"",
+            "tel":"",
+            "message":"",
+            "error_msg":""
+        }
+    },
+    methods:{
+        send_enquire(){
+            // console.log(this.mail)
+            this.error_msg = ""
+            if(this.name == "" || this.mail == "" || this.message == ""){
+                this.error_msg = this.$t('warn_msg_1')
+            }
+            let pattern= /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+            if(! pattern.test(this.mail.toString())){
+                this.error_msg = this.$t('warn_msg_2')
+            }
 
+            if(this.error_msg == ""){
+                this.error_msg = ""
+                this.$axios({
+                    method: "get",
+                    url: "http://127.0.0.1:8000/comment/?name="+this.name+"&mail_addr="+this.mail+"&phone="+this.tel+"&content="+this.message,
+                }).then(response => {
+                    console.log(response, "success");   // 成功的返回 
+                    this.error_msg = this.$t('warn_msg_3')    
+                })
+                .catch(error => {
+                    console.log(error, "error")
+                    this.error_msg = this.$t('warn_msg_4')  
+                }); // 失败的返回
+            }
+            else{
+                
+            }
+            
+            
+        }
+    }
 }
 </script>
 
@@ -137,7 +181,7 @@ export default {
     color: gray;
     cursor:pointer;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 60px;
     
     
 }
@@ -152,6 +196,14 @@ export default {
     top: 100px;
     left: 150px;
     background:url("../assets/img_12.png") no-repeat center center;
+}
+.error_msg{
+    margin-top: 30px;
+    font-size: 16px;
+    color: rgb(180, 0, 0);
+    text-align: center;
+    font-family: gillsans_light;
+    letter-spacing: 1px;
 }
 
 </style>>

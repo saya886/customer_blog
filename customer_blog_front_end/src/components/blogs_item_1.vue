@@ -1,37 +1,19 @@
 <template>
   <div>
-      <div class="sec_1">
+      
+      <div v-for="cate in blog_list" class="sec_1">
           <div class="main">
       <div class="title">
-          BUSINESS STORY
+          {{ cate.name}}
       </div>
+      <div class="left_text">INSPIRED FROM</div>
       <div class="item_list">
-          <div class="item">
+          <div v-for="blog in cate.data" class="item">
 
               <div class="item_">
-                  <img class="icon" src="../assets/img_37.png" alt="">
-              <div class="name">How to operate in  market operate in Chinese market</div>
-                <div class="author">By Jessica Well</div>
-              </div>
-              
-          </div>
-
-           <div class="item">
-
-              <div class="item_">
-                  <img class="icon" src="../assets/img_37.png" alt="">
-              <div class="name">How to operate in  market operate in Chinese market</div>
-                <div class="author">By Jessica Well</div>
-              </div>
-              
-          </div>
-
-          <div class="item">
-
-              <div class="item_">
-                  <img class="icon" src="../assets/img_37.png" alt="">
-              <div class="name">How to operate in  market operate in Chinese market</div>
-                <div class="author">By Jessica Well</div>
+                  <img class="icon" v-bind:src="blog.blog_img" alt="">
+              <div class="name">{{blog.title}}</div>
+                <div class="author">{{blog.author}}</div>
               </div>
               
           </div>
@@ -42,53 +24,29 @@
         </div>
       </div>
 
-      <div class="sec_1">
-          <div class="main">
-      <div class="title">
-          BUSINESS STORY
-      </div>
-      <div class="item_list">
-          <div class="item">
 
-              <div class="item_">
-                  <img class="icon" src="../assets/img_37.png" alt="">
-              <div class="name">How to operate in  market operate in Chinese market</div>
-                <div class="author">By Jessica Well</div>
-              </div>
-              
-          </div>
-
-           <div class="item">
-
-              <div class="item_">
-                  <img class="icon" src="../assets/img_37.png" alt="">
-              <div class="name">How to operate in  market operate in Chinese market</div>
-                <div class="author">By Jessica Well</div>
-              </div>
-              
-          </div>
-
-          <div class="item">
-
-              <div class="item_">
-                  <img class="icon" src="../assets/img_37.png" alt="">
-              <div class="name">How to operate in  market operate in Chinese market</div>
-                <div class="author">By Jessica Well</div>
-              </div>
-              
-          </div>
-
-      </div>
-
-      <div class="center_button">More</div>
-        </div>
-      </div>
   </div>
 </template>
 
 <script>
 export default {
-
+    data(){
+        return{
+            "blog_list":[]
+        }
+    },
+    mounted (){
+        this.$axios({
+            method: "get",
+            url: "http://127.0.0.1:8000/blog?type_categary=123",
+        }).then(response => {
+            console.log(response, "success");   // 成功的返回
+            this.blog_list = response["data"]["data"]
+        })
+        .catch(error => {
+            console.log(error, "error")
+        }); // 失败的返回
+    }
 }
 </script>
 
@@ -97,6 +55,9 @@ export default {
     height: 900px;
     background: rgb(248, 248, 248);
     border:1px solid rgb(26, 26, 26);
+}
+.sec_1{
+    position: relative;
 }
 .title{
     font-family: gillsans_light;
@@ -161,6 +122,17 @@ export default {
     background: rgb(49, 49, 49);
     color: white;
     cursor: pointer;
+}
+.left_text{
+    font-family: gillsans_light;
+    color: rgb(49, 49, 49);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 5px;
+    top: 350px;
 }
 // .title{
 //     font-family: gillsans_light;
