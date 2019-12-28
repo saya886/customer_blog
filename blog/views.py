@@ -19,15 +19,15 @@ def blog_instance_api(requests):
         
         res.append({
             "name":"BUSINESS STORY",
-            "data":list(blog_instance.objects.filter(categary="BUSINESS STORY").values("title","blog_img","author"))[:3]
+            "data":list(blog_instance.objects.filter(categary="BUSINESS STORY").values("title","blog_img","author","id"))[:3]
         })
         res.append({
             "name":"STUDENT VOICE",
-            "data":list(blog_instance.objects.filter(categary="STUDENT VOICE").values("title","blog_img","author"))[:3]
+            "data":list(blog_instance.objects.filter(categary="STUDENT VOICE").values("title","blog_img","author","id"))[:3]
         })
         res.append({
             "name":"CULTURAL ADVENTURE",
-            "data":list(blog_instance.objects.filter(categary="CULTURAL ADVENTURE").values("title","blog_img","author"))[:3]
+            "data":list(blog_instance.objects.filter(categary="CULTURAL ADVENTURE").values("title","blog_img","author","id"))[:3]
         })
         for i in res:
             for j in i["data"]:
@@ -46,6 +46,9 @@ def blog_instance_api(requests):
     if categary != "":
         try:
             res = list(blog_instance.objects.filter(categary=categary).values())
+
+            for j in res:
+                j["blog_img"] = api_media + j["blog_img"]
             return JsonResponse({'status':'1','msg':'','data':res},content_type="application/json")  
         except:
             return JsonResponse({'status':'0','msg':'','data':[]},content_type="application/json")         

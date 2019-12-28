@@ -15,7 +15,7 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <div @click="change_route('/')"  class="nav_link">Home {{ $t('me')}} </div>
+                <div @click="change_route('/')"  class="nav_link">Home</div>
                 <div class="nav_drop_down">
 
                 </div>
@@ -126,7 +126,7 @@ export default {
             this.lang = lang_str;
         },
         change_route(path){
-            this.$router.push(path)
+            this.$router.push("/" + path)
         }
     }
 }

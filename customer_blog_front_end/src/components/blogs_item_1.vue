@@ -11,8 +11,8 @@
           <div v-for="blog in cate.data" class="item">
 
               <div class="item_">
-                  <img class="icon" v-bind:src="blog.blog_img" alt="">
-              <div class="name">{{blog.title}}</div>
+                  <img  @click="go_to_detail(blog.id)" class="icon" v-bind:src="blog.blog_img" alt="">
+              <div @click="go_to_detail(blog.id)" class="name">{{blog.title}}</div>
                 <div class="author">{{blog.author}}</div>
               </div>
               
@@ -20,7 +20,7 @@
 
       </div>
 
-      <div class="center_button">More</div>
+      <div @click="go_to_more(cate.name)" class="center_button">More</div>
         </div>
       </div>
 
@@ -46,6 +46,16 @@ export default {
         .catch(error => {
             console.log(error, "error")
         }); // 失败的返回
+    },
+    methods:{
+        go_to_detail(blog_id){
+            console.log(blog_id);
+            this.$router.push("/blogs/"+blog_id.toString()+"#main")
+        },
+        go_to_more(categary_id){
+            console.log(categary_id);
+            this.$router.push("/categary/"+categary_id.toString()+"#main")
+        }
     }
 }
 </script>
@@ -84,6 +94,7 @@ export default {
         .icon{
             width: 100%;
             // height: 200px;
+            cursor: pointer;
         }
         .name{
             margin-top: 10px;
@@ -95,6 +106,7 @@ export default {
             // letter-spacing: 1px;
             padding-bottom:10px; 
             border-bottom:1px solid rgb(26, 26, 26);
+            cursor: pointer;
         }
         .author{
             margin-top: 20px;

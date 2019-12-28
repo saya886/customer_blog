@@ -40,4 +40,9 @@
 
 tip1
 删除CKEDITOR plugins 中的flash
+备份 pip package
+web.curatedchina.com
+www.curatedchina.com
+47.244.3.155
+
 

@@ -44,6 +44,14 @@ export default new Router({
       path: '/blogs',
       name: 'blogs',
       component: () => import(/* webpackChunkName: "about" */ './views/blogs.vue')
+    },{
+      path: '/blogs/:blog_id',
+      name: 'blogs',
+      component: () => import(/* webpackChunkName: "about" */ './views/blog_main.vue')
+    },{
+      path: '/categary/:categary',
+      name: 'categary',
+      component: () => import(/* webpackChunkName: "about" */ './views/blog_more.vue')
     }
   ]
 })

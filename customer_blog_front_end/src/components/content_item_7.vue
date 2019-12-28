@@ -2,12 +2,12 @@
 <div class="main">
     <div class="logo"></div>
     <dir class="menu">
-        <div class="menu_item">Home</div>
-        <div class="menu_item">About</div>
-        <div class="menu_item">Programs</div>
-        <div class="menu_item">Blogs</div>
-        <div class="menu_item">Contact</div>
-        <div class="menu_item menu_item_1">中文</div>
+        <div @click="change_route('/')" class="menu_item">Home</div>
+        <div @click="change_route('about')" class="menu_item">About</div>
+        <div @click="change_route('programs')" class="menu_item">Programs</div>
+        <div @click="change_route('blogs')" class="menu_item">Blogs</div>
+        <div @click="change_route('contact')" class="menu_item">Contact</div>
+        <div class="menu_item menu_item_1"></div>
     </dir>
     <div class="copyright_text">
         <br/>
@@ -18,11 +18,17 @@
 </div>
 </template>
 
+
 <script>
 export default {
-
+    methods:{
+        change_route(path){
+            this.$router.push("/" + path)
+        }
+    }
 }
 </script>
+
 
 <style lang="less" scoped>
 .main{
@@ -48,9 +54,10 @@ export default {
         
         margin-right:50px;
         color: white;
+        cursor: pointer;
     }
     .menu_item_1{
-        margin-left: 150px;
+        margin-left: 100px;
         margin-right: 150px;
     }
 }

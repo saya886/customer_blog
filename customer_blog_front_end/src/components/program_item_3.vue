@@ -15,7 +15,7 @@ your needs!</div>
 export default {
     methods:{
         change_route(path){
-            this.$router.push(path)
+            this.$router.push("/" + path)
         }
     }
 }
