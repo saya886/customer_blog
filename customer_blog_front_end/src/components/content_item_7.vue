@@ -2,7 +2,7 @@
 <div class="main">
     <div class="logo"></div>
     <dir class="menu">
-        <div @click="change_route('/')" class="menu_item">Home</div>
+        <div @click="change_route('')" class="menu_item">Home</div>
         <div @click="change_route('about')" class="menu_item">About</div>
         <div @click="change_route('programs')" class="menu_item">Programs</div>
         <div @click="change_route('blogs')" class="menu_item">Blogs</div>

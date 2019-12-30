@@ -15,7 +15,7 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <div @click="change_route('/')"  class="nav_link">Home</div>
+                <div @click="change_route('')"  class="nav_link">Home</div>
                 <div class="nav_drop_down">
 
                 </div>

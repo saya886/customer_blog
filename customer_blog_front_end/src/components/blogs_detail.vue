@@ -23,7 +23,7 @@ data(){
 mounted(){
     this.$axios({
         method: "get",
-        url: "http://127.0.0.1:8000/blog?blog_id=" + this.$route.params.blog_id,
+        url: "/blog?blog_id=" + this.$route.params.blog_id,
     }).then(response => {
         console.log(response, "success");   // 成功的返回
         this.data = response.data.data

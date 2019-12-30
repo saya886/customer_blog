@@ -40,7 +40,8 @@
 
 tip1
 删除CKEDITOR plugins 中的flash
-备份 pip package
+备份 pip package 
+nginx user 设置为root
 web.curatedchina.com
 www.curatedchina.com
 47.244.3.155

@@ -1,1 +1,1 @@
-api_media = "http://127.0.0.1:8000/media/"
+api_media = "http://198.13.41.56:8000/media/"

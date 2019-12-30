@@ -36,7 +36,7 @@ export default {
     mounted (){
         this.$axios({
             method: "get",
-            url: "http://127.0.0.1:8000/blog?categary="+this.$route.params.categary.toString(),
+            url: "/blog?categary="+this.$route.params.categary.toString(),
         }).then(response => {
             console.log(response, "success");   // 成功的返回
             this.blog_list = response["data"]["data"]

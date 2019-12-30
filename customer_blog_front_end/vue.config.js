@@ -4,9 +4,10 @@ module.exports = {
     // 将baseUrl: '/api',改为baseUrl: '/',
     baseUrl: '/',
     devServer: {
+        host: "198.13.41.56",
         proxy: {
             '/media': {
-                target: 'http://127.0.0.1:8000',
+                target: 'http://198.13.41.56:8000',
                 changeOrigin: true,
                 ws: true,
             }
