@@ -13,7 +13,8 @@
         <div class="main_1_content">“ Is it not a pleasure to study and practice what you have learned ？ </div>
         <div class="main_1_content">Is it not a delight after all to have friends come from afar ？”</div>
         <div class="main_1_content">“ 学而时习之，不亦说乎？有朋自远方来，不亦乐乎？”</div>
-        </div>
+        <div class="main_1_content"><br>-  孔子</div>
+        </div> 
     </dir>
 </div>
 </template>
@@ -35,7 +36,7 @@ export default {
     padding-top: 150px;
     text-align: center;
     color: rgb(87, 87, 87);
-    font-size: 50px;
+    font-size: 40px;
 }
 .divider{
     background: green;
@@ -49,12 +50,12 @@ export default {
 }
 .conetnt{
     color: rgb(83, 83, 83);
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 25px;
+    line-height: 35px;
 }
 .main_1{
     // background: red;
-    background:url("../assets/img_1.png") no-repeat center center;
+    background:url("../assets/img_41.jpg") no-repeat center center;
     background-size: cover;
     height: 750px;
     

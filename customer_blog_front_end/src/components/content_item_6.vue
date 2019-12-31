@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="error_msg">{{error_msg}}</div>
-    <div @click="send_enquire()" class="center_cust_button">SEND MY ENQUIRE</div>
+    <div @click="send_enquire()" class="center_cust_button">SEND MY ENQUIRY</div>
     <div class="abs_img_3"></div>
 </div>
 </a>
@@ -98,17 +98,17 @@ export default {
 <style lang="less" scoped>
 .main{
     // background: rgba(21, 255, 0, 0.445);
-    height: 900px;
-    padding: 130px 350px 200px 350px;
+    height: 700px;
+    padding: 90px 350px 100px 350px;
     position: relative;
 }
 .title{
-    font-size: 50px;
+    font-size: 40px;
     color: gray;
     text-align: center;
 }
 .text{
-    margin-top: 40px;
+    margin-top: 25px;
     font-size: 30px;
     color: gray;
     text-align: center;
@@ -166,7 +166,7 @@ export default {
             margin-top: 20px;
             font-size: 16px;
             color: gray;
-            height: 300px;
+            height: 200px;
         }
     }
 }

@@ -6,7 +6,7 @@
       <div class="title">
           {{ cate.name}}
       </div>
-      <div class="left_text">INSPIRED FROM</div>
+      <div class="left_text">{{ cate.desc}}</div>
       <div class="item_list">
           <div v-for="blog in cate.data" class="item">
 

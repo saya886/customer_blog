@@ -1,11 +1,11 @@
 <template>
   <div class="main">
       <div class="sec">
-          <div class="ubclock_txt">ubclock</div>
+          <div class="ubclock_txt">unlock</div>
           <div class="main_item">
               <div class="detail_button">See Deatils</div>
               
-              <div class="icon_key"><img style="margin-top:10px" src="../assets/img_19.png" alt=""> <span class="sec_index">01</span> </div>
+              <div class="icon_key"><img style="margin-top:10px;display:inline;" src="../assets/img_19.png" alt=""> <span class="sec_index">01</span> </div>
               
           </div>
             <div class="move_text text_1">Business Hub</div>

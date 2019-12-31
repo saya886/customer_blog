@@ -23,7 +23,7 @@ export default {
     // padding-top:200px; 
 }
 .sec{
-    height: 1000px;
+    height: 800px;
     background: gray;
     padding-top:200px; 
     position: relative;
@@ -46,7 +46,7 @@ export default {
 .main_item{
     // position: absolute;
     z-index: 10;
-    height: 720px;
+    height: 620px;
     
     background: white;
     background-size: cover;
@@ -83,9 +83,9 @@ export default {
 
 }
 .title_1{
-    font-size: 60px;
+    font-size: 40px;
     color: rgb(83, 83, 83);
-    margin-top: 45px;
+    margin-top: 35px;
     text-align: center;
     font-family: gillsans_light;
 }
@@ -96,7 +96,7 @@ export default {
     width: 65%;
     height: 340px;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 30px;
     line-height: 35px;
     text-align:justify;
     overflow-y: hidden;

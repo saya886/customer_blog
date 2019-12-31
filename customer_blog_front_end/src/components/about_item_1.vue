@@ -38,7 +38,7 @@ export default {
     // padding-top:200px; 
 }
 .sec{
-    height: 1000px;
+    height: 800px;
     background: gray;
     padding-top:200px; 
     position: relative;
@@ -61,7 +61,7 @@ export default {
 .main_item{
     // position: absolute;
     z-index: 10;
-    height: 720px;
+    height: 620px;
     
     background: white;
     background:url("../assets/img_20.png") no-repeat center center;

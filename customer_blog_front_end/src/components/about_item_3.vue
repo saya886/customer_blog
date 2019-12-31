@@ -12,11 +12,11 @@
               </div>
               <div class="title_2">
                 <div class="left_">Trustworthy</div>
-                <div class="right_">Diversity</div>
+                <div class="right_">Entrepreneurial spirit</div>
               </div>
               <div class="title_2">
                 <div class="left_">Detail oriented</div>
-                <div class="right_">Entrepreneurial spirit</div>
+                <div class="right_">Diversity</div>
               </div>
 
               <div class="a_1">V</div>
@@ -39,7 +39,7 @@ export default {
     // padding-top:200px; 
 }
 .sec{
-    height: 1000px;
+    height: 800px;
     background: gray;
     padding-top:200px; 
     position: relative;
@@ -62,7 +62,7 @@ export default {
 .main_item{
     // position: absolute;
     z-index: 10;
-    height: 720px;
+    height: 620px;
     
     background: white;
     background:url("../assets/img_21.png") no-repeat center center;

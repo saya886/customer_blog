@@ -6,19 +6,19 @@
     <div class="text_item text_1">
         <div class="item_group">
             <div class="icon_item icon_item_1"></div>
-            <div class="value_item">Email  :  curated@gmail.com</div>
+            <div class="value_item">Email  :  hello@curatedchina.com</div>
         </div>
     </div>
     <div class="text_item text_2">
         <div class="item_group">
             <div class="icon_item icon_item_2"></div>
-            <div class="value_item">Phone  :  + 86 21 8896 0056</div>
+            <div class="value_item">Phone  :  + 86 18001611312</div>
         </div>
     </div>
     <div class="text_item text_3">
         <div class="item_group">
             <div class="icon_item icon_item_3"></div>
-            <div class="value_item">Address : Room Road District Shanghai China</div>
+            <div class="value_item">Address : Rm 3506, Building #3, No. 277 Zheqiao Rd, Shanghai, China</div>
         </div>
     </div>
     <div @click="change_route('contact#enquire')" class="button_cust">ENQUIRE</div>

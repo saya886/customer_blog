@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+  <header_menu/>
     <div class="layer_1">
       <about_header/>
     </div>
@@ -25,6 +26,7 @@ import about_item_3 from '@/components/about_item_3.vue'
 import about_item_4 from '@/components/about_item_4.vue'
 import about_item_5 from '@/components/about_item_5.vue'
 import content_item_7 from '@/components/content_item_7.vue'
+import header_menu from '@/components/header_menu.vue'
 export default {
     components: {
         about_header,
@@ -33,7 +35,8 @@ export default {
         about_item_3,
         about_item_4,
         about_item_5,
-        content_item_7
+        content_item_7,
+        header_menu
     }
 }
 </script>

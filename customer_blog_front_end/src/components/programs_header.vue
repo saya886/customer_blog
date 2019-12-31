@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-      <header_menu/>
+
       <div class="title_1">Our First and Foremost Goal </div>
       <div class="title_2">To create the most practical and inspiring
 learning journey in China that you
@@ -20,11 +20,12 @@ export default {
 <style lang="less" scoped>
 
 .main{
-    height: 899px;
+    height: 600px;
     background: gray;
     background:url("../assets/img_31.png") no-repeat center center;
     background-size: cover;
     z-index: 100;
+    padding-top:80px;
 }
 .title_1{
     height:70px;

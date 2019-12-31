@@ -32,6 +32,9 @@ def blog_instance_api(requests):
         for i in res:
             for j in i["data"]:
                 j["blog_img"] = api_media + j["blog_img"]
+        res[0]["desc"] = "INSPIRED FROM"
+        res[1]["desc"] = "SPOTLIGHT ON"
+        res[2]["desc"] = "HANDPICKED FROM"
 
         return JsonResponse({'status':'1','msg':'','data':res},content_type="application/json")  
     if blog_id != "":

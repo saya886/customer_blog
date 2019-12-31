@@ -5,7 +5,9 @@ with the following four valuable building blocks.</div>
     <div class="item_group">
         <div class="item_row">
             <div class="item item_left">
-                <div class="item_d1 item_content_1">Theoretical</div> 
+                <div class="item_d1 item_content_1">
+                <div class="img_abs"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">I :</span></div>
+                Theoretical</div> 
             </div>
             <div class="item item_mid">
                 <div class="item_d2 item_content_2">Sitting in the classroom of China’s top <br>
@@ -24,7 +26,9 @@ knowledge from prestigious professors.</div>
                 
             </div>
             <div class="item item_mid">
-                <div class="item_d1 item_content_1">Practical</div>
+                <div class="item_d1 item_content_1">
+                <div class="img_abs_1"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅱ:</span></div>
+                Practical</div>
                 <div class="item_move item_move_left">
                     <div class="item_content_3 item_content_img_2"></div> 
                 </div>
@@ -37,7 +41,8 @@ attending workshops to interact <br>with the entrepreneurs that have rich <br>ha
 
         <div class="item_row">
             <div class="item item_left">
-                <div class="item_d1 item_content_1">Cultural</div> 
+                <div class="item_d1 item_content_1"><div class="img_abs_2"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅲ:</span></div>
+                Cultural</div> 
             </div>
             <div class="item item_mid">
                 <div class="item_d2 item_content_2">Learning the essence of various Chinese<br>traditional culture by talking to <br>the 
@@ -56,14 +61,14 @@ exploring the historical sites.</div>
                 
             </div>
             <div class="item item_mid">
-                <div class="item_d1 item_content_1">Entrepreneurial</div>
+                <div class="item_d1 item_content_1">
+                <div class="img_abs_2"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅳ:</span></div>Entrepreneurial</div>
                 <div class="item_move item_move_left">
                     <div class="item_content_3 item_content_img_4"></div> 
                 </div>
             </div>
             <div class="item item_right">
-                <div class="item_content_2 item_d2">Getting valuable career development <br> suggestions and facilitating your business <br>inspirations or launch business project 
-in China.</div>
+                <div class="item_content_2 item_d2">Getting valuable career development suggestions; Help facilitating or launching business projects in Chinese market.</div>
             </div>
         </div>
 
@@ -86,9 +91,9 @@ export default {
     padding-top:134px;
     padding-bottom:100px;
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
     color: gray;
-    line-height: 70px;
+    line-height: 50px;
 }
 .item_group{
     // background: gray;
@@ -116,7 +121,8 @@ export default {
         .item_d1{
             background: #333333; 
             height: 400px;
-            width: 400px;     
+            width: 400px;
+            position:relative;   
         }
     }
     .item_right{
@@ -128,7 +134,8 @@ export default {
         .item_d1{
             background: #333333; 
             height: 400px;
-            width: 400px;     
+            width: 400px;
+            // position:relative;   
         }
     }
     .item_mid{
@@ -148,6 +155,7 @@ export default {
             height: 400px;
             width: 400px;
             z-index: 2;
+            // position:relative;
             // display: none;
             // top: -400px;
         }
@@ -192,6 +200,7 @@ export default {
     align-items:center;
     justify-content:center;
     text-align: center;
+    line-height:25px;
 }
 .item_content_3{
     height: 400px;
@@ -209,5 +218,28 @@ export default {
 }
 .item_content_img_4{
     background:url("../assets/img_16.png") no-repeat center;
+}
+
+.img_abs{
+    position:absolute;
+    top:120px;
+    left:80px;
+}
+.img_abs_1{
+    position:absolute;
+    top:120px;
+    left:110px;
+}
+.img_abs_2{
+    position:absolute;
+    top:120px;
+    left:190px;
+}
+.inline_img{
+    display:inline;
+}
+.index_count{
+    font-size:15px;
+    margin-left:10px;
 }
 </style>>

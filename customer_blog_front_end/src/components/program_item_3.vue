@@ -23,21 +23,21 @@ export default {
 
 <style lang="less" scoped>
 .main{
-    height: 800px;
+    height: 570px;
     background: rgb(52, 52, 54);
     padding-top: 70px;
 }
 .content{
-    height: 700px;
-    width: 700px;
+    height: 500px;
+    width: 500px;
     border-radius: 50%;
     background: rgb(224, 224, 224);
     margin:0 auto;
 }
 .text_1{
-    padding-top: 190px;
+    padding-top: 100px;
     color: rgb(39, 39, 39);
-    font-size: 40px;
+    font-size: 35px;
     line-height: 40px;
     text-align: center;
     margin-bottom: 40px;
@@ -46,7 +46,7 @@ export default {
 .text_2{
     margin-top: 30px;
     color: rgb(39, 39, 39);
-    font-size: 40px;
+    font-size: 35px;
     line-height: 40px;
     text-align: center;
     letter-spacing: 1px;
@@ -55,7 +55,7 @@ export default {
     width: 250px;
     height: 38px;
     color: rgb(230, 230, 230);
-    font-size: 25px;
+    font-size: 20px;
     line-height: 45px;
     text-align: center;
     background: rgb(139, 7, 7);

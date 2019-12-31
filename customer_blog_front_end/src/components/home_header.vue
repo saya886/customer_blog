@@ -1,6 +1,6 @@
 <template>
 <div class="main">
-    <header_menu/>
+    
     <div class="content_1">
         <div class="title_1 title">Broaden your horizon</div>
         <div class="title">by a curated study tour in China</div>
@@ -43,8 +43,10 @@ export default {
 .main{
     height: 899px;
     background: gray;
-    background:url("../assets/img_3.png") no-repeat center center;
+    background:url("../assets/img_40.jpg") no-repeat center center;
     background-size: cover;
+    // overflow-y:hidden;
+    padding-top:80px;
 }
 
 

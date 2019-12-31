@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-      <header_menu/>
+
       <div class="title_1">Meet Us</div>
       <div class="title_2">Curators,Thinkers&Collaborators</div>
   </div>
@@ -18,11 +18,12 @@ export default {
 <style lang="less" scoped>
 
 .main{
-    height: 899px;
+    height: 600px;
     background: gray;
     background:url("../assets/img_18.png") no-repeat center center;
     background-size: cover;
     z-index: 100;
+    padding-top:80px;
 }
 .title_1{
     height:70px;
@@ -30,7 +31,7 @@ export default {
     color: rgb(39, 39, 39);
     margin: 0 auto;
     width: 340px;
-    margin-top:250px;
+    margin-top:160px;
     text-align: center;
     // text-shadow: 5px 5px 8px #000000;
     background: rgba(255, 255, 255, 0.685);

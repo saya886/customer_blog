@@ -3,10 +3,13 @@
       <div class="item_gird">
           <div class="item_1">
               <img class="img_1" src="../assets/img_32.png" alt="">
-              Theoretica</div>
+              <div class="img_abs"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">I :</span></div>
+              Theoretical</div>
           <div class="item_2"></div>
           <div class="item_1">
-              <img class="img_2" src="../assets/img_33.png" alt="">Practical</div>
+              <img class="img_2" src="../assets/img_33.png" alt="">
+              <div class="img_abs_1"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅱ :</span></div>
+              Practical</div>
 
             <div class="item_1_"></div>
           <div class="item_2_">
@@ -18,10 +21,14 @@ different building blocks we offered to set up your private inspiring study tour
           <div class="item_1_"></div>
 
           <div class="item_1">
-              <img class="img_3" src="../assets/img_34.png" alt="">Entrepreneurial</div>
+              <img class="img_3" src="../assets/img_34.png" alt="">
+              <div class="img_abs_2"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅲ :</span></div>
+              Entrepreneurial</div>
           <div class="item_2"></div>
           <div class="item_1">
-              <img class="img_2" src="../assets/img_35.png" alt="">Cultural</div>
+              <img class="img_2" src="../assets/img_35.png" alt="">
+              <div class="img_abs_3"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅳ:</span></div>
+              Cultural</div>
 
       </div>
   </div>
@@ -35,14 +42,14 @@ export default {
 
 <style lang="less" scoped>
 .main{
-    height: 1100px;
+    height: 750px;
     background: rgb(221, 221, 221);
     padding-top: 82px;
 }
 .item_gird{
     width: 80%;
     margin: 0 auto;
-    height: 940px;
+    height: 540px;
     // background: gray;
 }
 
@@ -51,10 +58,10 @@ export default {
     width: 30%;
     float: left;
     background: rgb(49, 47, 47);
-    height: 320px;
+    height: 220px;
     color: white;
     font-size: 36px;
-    line-height: 320px;
+    line-height: 220px;
     text-align: center;
 }
 .item_2{
@@ -62,7 +69,7 @@ export default {
     float: left;
     width: 40%;
     background: rgba(255, 255, 255, 0);
-    height: 320px;
+    height: 220px;
 }
 
 .item_1_{
@@ -70,14 +77,14 @@ export default {
     width: 30%;
     float: left;
     background: rgba(255, 255, 255, 0);
-    height: 320px;
+    height: 220px;
 }
 .item_2_{
     position: relative;
     float: left;
     width: 40%;
     background: rgb(49, 47, 47);
-    height: 320px;
+    height: 220px;
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -106,5 +113,32 @@ export default {
     position: absolute;
     left: 0px;
     top:0px;
+}
+.inline_img{
+    display:inline;
+}
+.index_count{
+    font-size:15px;
+    margin-left:10px;
+}
+.img_abs{
+    position:absolute;
+    top:-39px;
+    left:75px;
+}
+.img_abs_1{
+    position:absolute;
+    top:-39px;
+    left:100px;
+}
+.img_abs_2{
+    position:absolute;
+    top:-39px;
+    left:47px;
+}
+.img_abs_3{
+    position:absolute;
+    top:-39px;
+    left:100px;
 }
 </style>

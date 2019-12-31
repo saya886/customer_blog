@@ -134,12 +134,18 @@ export default {
 
 <style lang="less" scoped>
 .header{
-    height: 100px;
+    position: fixed;
+    height: 80px;
+    width:100%;
     // background: rgba(255, 0, 0, 0.445);
+    padding-bottom:5px;
+    
+    top:1px;
+    z-index:100000;
 }
 .logo{
     background: red;
-    height: 100%;
+    height: 80px;
     width: 200px;
     float: left;
     margin-left: 100px; 

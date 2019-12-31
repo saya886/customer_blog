@@ -38,8 +38,8 @@ export default {
 <style lang="less" scoped>
 .main{
     // background: rgba(255, 0, 0, 0.445);
-    height: 1040px;
-    padding: 150px 140px 150px 140px;
+    height: 700px;
+    padding: 120px 140px 120px 140px;
 }
 .item{
     // background: rgba(0, 0, 255, 0.384);
@@ -48,7 +48,7 @@ export default {
     // padding: 80px;  
 }
 .title{
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
     color: rgb(82, 82, 82);
     font-size: 36px;
@@ -58,7 +58,7 @@ export default {
     
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     width: 100%;  
     height: 15px;
     background:url("../assets/divider_1_black.png") no-repeat center center;
@@ -75,15 +75,15 @@ export default {
     // background: red;
     
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 60px;
     width: 100%;  
-    height: 300px;
+    height: 50px;
     // padding: 5px;
     .icon_ietm{
         display: inline-block;
         // background: green;
         width: 32.8%;
-        height: 100%;
+        height: 50px;
         padding: 2px;
         .icon_image{
             // background: red;
