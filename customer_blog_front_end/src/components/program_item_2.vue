@@ -103,16 +103,19 @@ export default {
     position: absolute;
     left: -60px;
     top:0px;
+    // height:220px;
 }
 .img_2{
     position: absolute;
     right: 0px;
-    top:0px;
+    bottom:0px;
+    height:220px;
 }
 .img_3{
     position: absolute;
     left: 0px;
     top:0px;
+    height:220px;
 }
 .inline_img{
     display:inline;

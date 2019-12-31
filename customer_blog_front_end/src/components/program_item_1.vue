@@ -111,7 +111,10 @@ export default {
     font-family: gillsans_light;
     color: gray;
     cursor: pointer;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .icon_key{
     position: absolute;
     top: -50px;
@@ -134,7 +137,8 @@ export default {
 }
 .detail_button:hover{
     text-shadow: 0px 0px 20px #b1b1b1;
-    color: rgb(31, 31, 31);
+    color: black;
+    transform: scale(1.5,1.5);
 }
 
 </style>
