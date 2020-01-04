@@ -3,35 +3,86 @@
     <div class="item">
         <div class="title">Testimonials</div>
         <div class="divider"></div>
-        <div class="text_item">“We specialize in offering practical interactions with various
-enterprises and entrepreneurs operated in China to equip you with the latest insights from the Chinese market.”</div>
+        <div class="text_item">{{c_item.message}}</div>
         <div class="icon_group">
             <div class="icon_ietm">
-                <div class="icon_image icon_image_edu"></div>
+                
+                <img class="icon_image" v-bind:src="c_item.img_src" alt="">
                 <div class="icon_content">
-                    陈俊吉<br/>行知中国执行长<br/>北大清华
+                    {{c_item.content}}
                 </div>
+
+                
             </div>
-            <div class="icon_ietm">
-                <div class="icon_image icon_image_ins"></div>
-                <div class="icon_content">
-                    陈俊吉<br/>行知中国执行长<br/>北大清华
-                </div>
-            </div>
-            <div class="icon_ietm">
-                <div class="icon_image icon_image_dyn"></div>
-                <div class="icon_content">
-                    陈俊吉<br/>行知中国执行长<br/>北大清华
-                </div>
-            </div>
+            <img @click="click_last()" class="last control_button" src="../assets/left.png" alt="">
+            <img @click="click_next()" class="next control_button" src="../assets/right.png" alt="">
         </div>
+
+        
     </div>
 </div>
 </template>
 
 <script>
 export default {
+    data(){
+        return{
+            "is_show":true,
+            "index":0,
+            "data_list":[
 
+            ]
+        }
+    },
+    mounted (){
+        this.$axios({
+            method: "get",
+            url: "/testimonials",
+        }).then(response => {
+            console.log(response, "success");   // 成功的返回
+            this.data_list = response["data"]["data"]
+        })
+        .catch(error => {
+            console.log(error, "error")
+        }); // 失败的返回
+    },
+    methods:{
+        go_to_detail(program_id){
+            console.log(program_id);
+            this.$router.push("/programs/"+program_id.toString())
+        },
+        click_next(){
+            this.index = this.index + 1
+        },
+        click_last(){
+            this.index = this.index - 1
+        }
+        
+    },
+    computed:{
+        c_item(){
+            if(this.data_list.length > 0){
+                if(this.index <= this.data_list.length-1){
+                    if(this.index >= 0){
+                        return this.data_list[this.index]
+                    }else{
+                        this.index = 0
+                        return this.data_list[0]
+                    }
+                    
+                }else{
+                    this.index = 0
+                    return this.data_list[0]
+                }
+            }else{
+                return {
+                    "content":"",
+                    "img_src":"",
+                    "content":""
+                }
+            }
+        }
+    }
 }
 </script>
 
@@ -46,6 +97,8 @@ export default {
     height: 100%;
     border:3px solid rgb(136, 136, 136);
     // padding: 80px;  
+    
+    
 }
 .title{
     margin-top: 40px;
@@ -72,19 +125,19 @@ export default {
     margin: 0 auto;
 }
 .icon_group{
-    // background: red;
-    
-    margin: 0 auto;
     margin-top: 60px;
     width: 100%;  
-    height: 50px;
+    // height: 50px;
+    position: relative;
     // padding: 5px;
     .icon_ietm{
-        display: inline-block;
+        // display: inline-block;
         // background: green;
         width: 32.8%;
+        margin:0 auto;
         height: 50px;
         padding: 2px;
+        
         .icon_image{
             // background: red;
             height: 214px;
@@ -104,7 +157,7 @@ export default {
         //     opacity:1;
         // }
         .icon_content{
-            margin-top: 20px; 
+            margin-top: 40px; 
             text-align: center;
             color: rgb(82, 82, 82);;
             font-size: 12px;
@@ -113,5 +166,21 @@ export default {
 
     }
     
+}
+.control_button{
+    height:40px;
+    width:40px;
+    position: absolute;
+}
+.control_button:hover{
+    transform: scale(1.3,1.3);
+    cursor: pointer;
+    // box-shadow: 0px 0px 2px 2px gray;
+}
+.last{
+    left:250px;
+}
+.next{
+    right:250px;
 }
 </style>>

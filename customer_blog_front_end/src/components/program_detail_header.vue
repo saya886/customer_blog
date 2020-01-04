@@ -1,8 +1,8 @@
 <template>
   <div class="main">
 
-      <div class="title">We love to hear<br>
-from you .</div>
+      <div class="title">Unlock China Business Hub</div>
+      <div class="title_2">Customized Schedule & Bespoke Services </div>
   </div>
 </template>
 
@@ -20,18 +20,26 @@ export default {
 .main{
     height: 700px;
     background: gray;
-    background:url("../assets/img_17.png") no-repeat center center;
+    background:url("../assets/img_42.jpg") no-repeat center center;
     background-size: cover;
     padding-top:80px;
 }
 .title{
-    height:100px;
+    height:50px;
     font-size: 40px;
     color: white;
     margin: 0 auto;
     margin-top:200px;
-    width: 400px;
     text-align: center;
-    text-shadow: 5px 5px 8px #000000;
+    text-shadow: 2px 2px 8px #000000;
+}
+.title_2{
+    height:100px;
+    font-size: 23px;
+    color: white;
+    margin: 0 auto;
+    margin-top:30px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000000;
 }
 </style>

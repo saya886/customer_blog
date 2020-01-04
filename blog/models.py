@@ -33,17 +33,37 @@ class program_instance(models.Model):
 
     title_1 = models.TextField()
     title_2 = models.TextField()
+    desc = models.TextField(default="")
 
-    program_img = models.ImageField(upload_to ='uploads/' + datetime.datetime.now().strftime("%Y%m%d%H%M%S")+'/', height_field=None, width_field=None, max_length=1000,default="uploads/default_program.png",help_text="图片的大小务必是624x397")
-    content = RichTextUploadingField()
+    program_img = models.ImageField(upload_to ='uploads/' + datetime.datetime.now().strftime("%Y%m%d%H%M%S")+'/', height_field=None, width_field=None, max_length=1000,default="uploads/default_program.png",help_text="")
+    content = RichTextUploadingField(default="")
+
+    learning_objectives = RichTextUploadingField(default="")
+    ltinerary = RichTextUploadingField(default="")
+    details = RichTextUploadingField(default="")
+
     push_time = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return "%d" % self.pk
+        
 
     class Meta:
         verbose_name = '项目'
         verbose_name_plural = '项目'  #保证取消admin的model的s
+
+class testimonials_instance(models.Model):
+    message = models.TextField(default="")
+    img_src = models.ImageField(upload_to ='uploads/' + datetime.datetime.now().strftime("%Y%m%d%H%M%S")+'/', height_field=None, width_field=None, max_length=1000,default="uploads/default_program.png",help_text="")
+    content = models.TextField(default="")
+
+    def __str__(self):
+        return "%d" % self.pk
+        
+
+    class Meta:
+        verbose_name = '感言'
+        verbose_name_plural = '感言'  #保证取消admin的model的s
 
 class leave_comment(models.Model):
     name = models.TextField()

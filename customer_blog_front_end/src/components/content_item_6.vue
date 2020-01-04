@@ -99,7 +99,7 @@ export default {
 .main{
     // background: rgba(21, 255, 0, 0.445);
     height: 700px;
-    padding: 90px 350px 100px 350px;
+    padding: 60px 350px 0px 350px;
     position: relative;
 }
 .title{
@@ -109,7 +109,7 @@ export default {
 }
 .text{
     margin-top: 25px;
-    font-size: 30px;
+    font-size: 20px;
     color: gray;
     text-align: center;
 }
@@ -117,7 +117,7 @@ export default {
     
     width: 100%;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 30px;
     // background: rgb(117, 117, 117);
     .input_container{
         width: 32%;
@@ -181,7 +181,7 @@ export default {
     color: gray;
     cursor:pointer;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 30px;
     
     
 }
@@ -193,8 +193,8 @@ export default {
     height: 220px;
     width: 253px;
     position: absolute;
-    top: 100px;
-    left: 150px;
+    top: 80px;
+    left: 100px;
     background:url("../assets/img_12.png") no-repeat center center;
 }
 .error_msg{

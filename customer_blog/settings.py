@@ -151,7 +151,7 @@ CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'full',
         'skin': 'moono',
-        'height': 1000,
-        'width': 1500,
+        'height': 200,
+        'width': 1000,
     },
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div v-bind:style="{background:color}" class="header">
         <div class="logo"></div>
         <div class="menu">
 
@@ -65,7 +65,7 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <div class="nav_link">{{ lang }}</div>
+                <div class="nav_link nav_link_">{{ lang }}</div>
                 <div class="nav_drop_down">
                     <div @click="change_lang('zh')" class="nav_drop_down_item">
                         <a >中文</a>
@@ -90,7 +90,8 @@
 export default {
         data(){
         return{
-            'lang':'中文'
+            'lang':'中文',
+            'color':'#ffffff00'
         }
     },
     mounted (){
@@ -106,6 +107,17 @@ export default {
         }
 
         this.lang = lang_str;
+        window.addEventListener('scroll', function() {
+            let last_known_scroll_position = window.scrollY;
+            // console.log(this.color);
+            if(last_known_scroll_position == 0){
+                // console.log("123")
+                this.color = '#ffffff00'
+            }else{
+                this.color = '#000000b5'
+                // console.log('#333030b5')
+            }
+        }.bind(this));
     },
     methods:{
         change_lang(lang_c){
@@ -138,9 +150,9 @@ export default {
     height: 80px;
     width:100%;
     // background: rgba(255, 0, 0, 0.445);
-    padding-bottom:5px;
+    padding-bottom:20px;
     
-    top:1px;
+    // top:1px;
     z-index:100000;
 }
 .logo{
@@ -149,6 +161,7 @@ export default {
     width: 200px;
     float: left;
     margin-left: 100px; 
+    margin-top: 16px; 
     background:url("../assets/logo.png") no-repeat center center;
 }
 .menu{
@@ -180,14 +193,18 @@ export default {
         text-shadow: 5px 5px 8px #000000;
 
     }
+    .nav_link_{
+        font-size: 18px;
+    }
     .nav_link:hover{
         cursor:pointer;
     }
     .nav_drop_down{
-        margin-top: 100px;
+        margin-top: 80px;
         display: none;
         position: absolute;
         background: rgba(92, 92, 92, 0.404);
+        // background:red;
         
         width: 200px;
         .nav_drop_down_item{
@@ -227,7 +244,7 @@ export default {
         // padding: 5px;
         background: rgb(187, 0, 0);
         line-height: 30px;
-        // font-size: 16px;
+        font-size: 16px;
         height: 30px;
     }
 }

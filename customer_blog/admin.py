@@ -12,6 +12,9 @@ class program_instance_admin(admin.ModelAdmin):
 class leave_comment_admin(admin.ModelAdmin):
     list_display = ['name', 'mail_addr', 'phone','content','push_time']
 
+class testimonials_instance_admin(admin.ModelAdmin):
+    list_display = ['message', 'content']
+
 
 class MyAdminSite(AdminSite):
     site_header = 'Manage System'
@@ -21,3 +24,4 @@ admin_site = MyAdminSite(name='myadmin')
 admin_site.register(blog_instance,blog_instance_admin)
 admin_site.register(leave_comment,leave_comment_admin)
 admin_site.register(program_instance,program_instance_admin)
+admin_site.register(testimonials_instance,testimonials_instance_admin)

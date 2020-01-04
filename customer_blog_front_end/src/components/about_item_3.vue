@@ -8,15 +8,15 @@
 
               <div class="title_2">
                 <div class="left_">Genuine</div>
-                <div class="right_">Innovation</div>
+                <div class="right_">Diversity</div>
               </div>
               <div class="title_2">
                 <div class="left_">Trustworthy</div>
-                <div class="right_">Entrepreneurial spirit</div>
+                <div class="right_">Innovation</div>
               </div>
               <div class="title_2">
                 <div class="left_">Detail oriented</div>
-                <div class="right_">Diversity</div>
+                <div class="right_">Entrepreneurial spirit</div>
               </div>
 
               <div class="a_1">V</div>
@@ -62,19 +62,19 @@ export default {
 .main_item{
     // position: absolute;
     z-index: 10;
-    height: 620px;
+    height: 500px;
     
     background: white;
     background:url("../assets/img_21.png") no-repeat center center;
     background-size: cover;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     box-shadow: 0px 0px 30px 10px grey;
     position: relative;
 }
 .left{
-    height: 300px;
-    width: 137px;
+    height: 200px;
+    width: 90px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -93,7 +93,7 @@ export default {
 
 }
 .title_1{
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(255, 255, 255);
     margin-top: 45px;
     text-align: center;
@@ -128,26 +128,26 @@ export default {
 }
 .a_1{
   color: rgb(221, 221, 221);
-  font-size: 125px;
+  font-size: 100px;
   font-family: gillsans_light;
   position: absolute;
-  left: 144px;
-  bottom: 200px;
+  left: 104px;
+  bottom: 150px;
 }
 .a_2{
   color: rgb(221, 221, 221);
-  font-size: 125px;
+  font-size: 90px;
   font-family: gillsans_light;
   position: absolute;
-  left: 600px;
-  bottom: 75px;
+  left: 700px;
+  bottom: 45px;
 }
 .a_3{
   color: rgb(221, 221, 221);
-  font-size: 125px;
+  font-size: 90px;
   font-family: gillsans_light;
   position: absolute;
-  right: 150px;
-  top: 150px;
+  right: 100px;
+  top: 100px;
 }
 </style>

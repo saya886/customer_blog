@@ -18,7 +18,7 @@ export default {
 <style lang="less" scoped>
 
 .main{
-    height: 899px;
+    height: 700px;
     background: gray;
     background:url("../assets/img_36.png") no-repeat center center;
     background-size: cover;
@@ -26,17 +26,17 @@ export default {
     padding-top:80px;
 }
 .title_1{
-    height:70px;
-    font-size: 50px;
+    height:50px;
+    font-size: 40px;
     color: #676262;
     margin: 0 auto;
     // width: 340px;
-    margin-top:140px;
+    margin-top:180px;
     text-align: center;
     // text-shadow: 5px 5px 8px #000000;
     // background: rgba(255, 255, 255, 0.685);
-    font-weight: 100;
-    line-height: 85px;
+    // font-weight: 100;
+    line-height: 65px;
     // font-family: gillsans_light;
     letter-spacing: 1px;
 }

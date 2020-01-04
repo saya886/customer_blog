@@ -20,7 +20,7 @@ export default {
 <style lang="less" scoped>
 
 .main{
-    height: 600px;
+    height: 700px;
     background: gray;
     background:url("../assets/img_31.png") no-repeat center center;
     background-size: cover;
@@ -28,10 +28,10 @@ export default {
     padding-top:80px;
 }
 .title_1{
-    height:70px;
+    height:50px;
     font-size: 40px;
     color: white;
-    margin-top:150px;
+    margin-top:200px;
     text-align: center;
     text-shadow: 5px 5px 8px #000000;
     font-weight: 100;
@@ -39,7 +39,7 @@ export default {
     font-family: gillsans_light;
 }
 .title_2{
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     width: 70%;
     margin: 0 auto;

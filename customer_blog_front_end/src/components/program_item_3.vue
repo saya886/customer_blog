@@ -35,21 +35,23 @@ export default {
     margin:0 auto;
 }
 .text_1{
-    padding-top: 100px;
+    padding-top: 110px;
     color: rgb(39, 39, 39);
-    font-size: 35px;
+    font-size: 20px;
     line-height: 40px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
+    font-family:gillsans_light;
 }
 .text_2{
-    margin-top: 30px;
+    margin-top: 10px;
     color: rgb(39, 39, 39);
-    font-size: 35px;
+    font-size: 20px;
     line-height: 40px;
     text-align: center;
     letter-spacing: 1px;
+    font-family:gillsans_light;
 }
 .button_{
     width: 250px;

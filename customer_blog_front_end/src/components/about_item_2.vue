@@ -46,18 +46,18 @@ export default {
 .main_item{
     // position: absolute;
     z-index: 10;
-    height: 620px;
+    height: 500px;
     
     background: white;
     background-size: cover;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     box-shadow: 0px 0px 30px 10px grey;
     position: relative;
 }
 .left{
-    height: 300px;
-    width: 137px;
+    height: 200px;
+    width: 90px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -83,21 +83,21 @@ export default {
 
 }
 .title_1{
-    font-size: 40px;
+    font-size: 20px;
     color: rgb(83, 83, 83);
     margin-top: 35px;
     text-align: center;
     font-family: gillsans_light;
 }
 .title_2{
-    font-size: 22px;
+    font-size: 15px;
     color: rgb(83, 83, 83);
     font-family: gillsans_light;
-    width: 65%;
+    width: 75%;
     height: 340px;
     margin: 0 auto;
     margin-top: 30px;
-    line-height: 35px;
+    line-height: 20px;
     text-align:justify;
     overflow-y: hidden;
     // letter-spacing:1px;

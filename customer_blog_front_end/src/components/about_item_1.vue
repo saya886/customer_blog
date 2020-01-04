@@ -61,12 +61,12 @@ export default {
 .main_item{
     // position: absolute;
     z-index: 10;
-    height: 620px;
+    height: 500px;
     
     background: white;
     background:url("../assets/img_20.png") no-repeat center center;
     background-size: cover;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     box-shadow: 0px 0px 30px 10px grey;
     position: relative;
@@ -115,7 +115,7 @@ export default {
 .title_1{
     font-size: 48px;
     color: rgb(83, 83, 83);
-    margin-top: 170px;
+    margin-top: 90px;
     text-align: center;
 }
 .title_2{

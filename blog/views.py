@@ -64,10 +64,22 @@ def program_instance_api(requests):
             res = program_instance.objects.get(id=program_id).__dict__
             del res["_state"]
             del res['push_time']
+            res["program_img"] = api_media + res["program_img"]
             return JsonResponse({'status':'1','msg':'','data':res},content_type="application/json")  
         except:
-            return JsonResponse({'status':'0','msg':'','data':{}},content_type="application/json")        
-    return JsonResponse({'status':'0','msg':'','data':[]},content_type="application/json") 
+            return JsonResponse({'status':'0','msg':'','data':{}},content_type="application/json") 
+    else:
+        
+        res = list(program_instance.objects.all().values())
+        for j in res:
+            j["program_img"] = api_media + j["program_img"]
+    return JsonResponse({'status':'0','msg':'','data':res},content_type="application/json") 
+
+def testimonials_instance_api(requests):
+    res = list(testimonials_instance.objects.all().values())
+    for j in res:
+        j["img_src"] = api_media + j["img_src"]
+    return JsonResponse({'status':'0','msg':'','data':res},content_type="application/json") 
 
 def comment_api(requests):
     data_dict = dict(requests.GET.dict())

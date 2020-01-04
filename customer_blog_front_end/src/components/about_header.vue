@@ -18,7 +18,7 @@ export default {
 <style lang="less" scoped>
 
 .main{
-    height: 600px;
+    height: 700px;
     background: gray;
     background:url("../assets/img_18.png") no-repeat center center;
     background-size: cover;
@@ -40,13 +40,13 @@ export default {
     font-family: gillsans_light;
 }
 .title_2{
-    font-size: 60px;
+    font-size: 40px;
     color: white;
     margin: 0 auto;
     margin-top:60px;
     // width: 300px;
     text-align: center;
     text-shadow: 5px 5px 8px #000000;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 </style>

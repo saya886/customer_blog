@@ -53,12 +53,12 @@ export default {
 }
 .title_1{
     color: white;
-    font-size: 48px;
+    font-size: 40px;
 }
 .title_2{
     margin-top:10px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom:20px;
 }
 .text_item{
@@ -92,8 +92,8 @@ export default {
             float: left;
             color: white;
             height: 100%;
-            width: 400px;
-            font-size: 18px;
+            width: 500px;
+            font-size: 14px;
             line-height: 50px;
         }
     }
@@ -122,7 +122,7 @@ export default {
     width: 72px;
     position: absolute;
     bottom: 0px;
-    left: 150px;
+    left: 80px;
     background:url("../assets/img_7.png") no-repeat center center;
 }
 .abs_img_2{

@@ -127,21 +127,21 @@ export default {
 .img_abs{
     position:absolute;
     top:-39px;
-    left:75px;
+    left:45%;
 }
 .img_abs_1{
     position:absolute;
     top:-39px;
-    left:100px;
+    left:45%;
 }
 .img_abs_2{
     position:absolute;
     top:-39px;
-    left:47px;
+    left:45%;
 }
 .img_abs_3{
     position:absolute;
     top:-39px;
-    left:100px;
+    left:45%;
 }
 </style>

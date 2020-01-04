@@ -40,6 +40,11 @@ export default new Router({
       path: '/programs',
       name: 'programs',
       component: () => import(/* webpackChunkName: "about" */ './views/programs.vue')
+    },
+    {
+      path: '/programs/:program_id',
+      name: 'programs',
+      component: () => import(/* webpackChunkName: "about" */ './views/program_detail.vue')
     },{
       path: '/blogs',
       name: 'blogs',

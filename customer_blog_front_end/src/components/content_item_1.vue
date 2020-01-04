@@ -36,7 +36,7 @@ export default {
     padding-top: 150px;
     text-align: center;
     color: rgb(87, 87, 87);
-    font-size: 40px;
+    font-size: 30px;
 }
 .divider{
     background: green;
@@ -50,7 +50,7 @@ export default {
 }
 .conetnt{
     color: rgb(83, 83, 83);
-    font-size: 25px;
+    font-size: 20px;
     line-height: 35px;
 }
 .main_1{
@@ -69,7 +69,7 @@ export default {
 }
 .main_1_content{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 45px;
     text-align: center;
     text-shadow: 5px 5px 8px #000000;

@@ -7,9 +7,6 @@
     <div class="layer_2">
       <program_item_1/>
     </div>
-    <div class="layer_3">
-      <program_item_1/>
-    </div>
 
     <program_item_2/>
     <program_item_3/>

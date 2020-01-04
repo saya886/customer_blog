@@ -41,7 +41,7 @@ export default {
 
 <style lang="less" scoped>
 .main{
-    height: 899px;
+    height: 700px;
     background: gray;
     background:url("../assets/img_40.jpg") no-repeat center center;
     background-size: cover;
@@ -57,7 +57,7 @@ export default {
     margin-top: 10px;
     width: 1000px;  
     height: 60px;
-    font-size: 60px;
+    font-size: 40px;
     color: white;
     text-align: center;
     text-shadow: 5px 5px 8px #000000;
@@ -69,8 +69,9 @@ export default {
     background: red;
     
     margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left:-8px;
     width: 100%;  
     height: 15px;
     background:url("../assets/divider_1_white.png") no-repeat center center;
@@ -81,7 +82,7 @@ export default {
     margin: 0 auto;
     margin-top: 20px;
     width: 550px;  
-    height: 130px;
+    height: 110px;
     // padding: 5px;
     .icon_ietm{
         display: inline-block;
@@ -92,6 +93,7 @@ export default {
         .icon_image{
             // background: red;
             height: 100px;
+            transform: scale(0.7,0.7); /* 标准语法 */
             
         }
         .icon_image_edu{
@@ -117,22 +119,22 @@ export default {
         .icon_content{
             text-align: center;
             color: white;
-            font-size: 23px;
+            font-size: 18px;
             line-height: 24px;
         }
 
     }
 }
 .center_button{
-    height: 45px;
-    width: 160px;
+    height: 35px;
+    width: 130px;
     margin: 0 auto;
     margin-top: 70px; 
     
     text-align: center;
-    border:4px solid white;
-    line-height: 45px;
-    font-size: 23px;
+    border:3px solid white;
+    line-height: 35px;
+    font-size: 19px;
     color: white;
     cursor:pointer;
     
