@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="center_button">Unlock Trips</div>
+        <div @click="change_route('programs#1_id')" class="center_button">Unlock Trips</div>
     </div>
 </div>
 </template>
@@ -35,6 +35,11 @@ import header_menu from './header_menu.vue'
 export default {
     components: {
         header_menu
+    },
+    methods:{
+        change_route(path){
+            this.$router.push("/" + path)
+        }
     }
 }
 </script>

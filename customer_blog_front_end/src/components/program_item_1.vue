@@ -1,9 +1,9 @@
 <template>
   <div class="main">
-      <div v-for="program in data_list" class="sec">
-          <div class="ubclock_txt">unlock</div>
+      <div  v-bind:id="program.id + '_id'" v-for="program in data_list" class="sec">
+          <div class="ubclock_txt">Unlock</div>
           <div class="main_item">
-              <div @click="go_to_detail(program.id)" class="detail_button">See Deatils</div>
+              <div @click="go_to_detail(program.id)" class="detail_button">See Details</div>
               <img @click="go_to_detail(program.id)" class="icon" v-bind:src="program.program_img" alt="">
               <div class="icon_key"><img style="margin-top:10px;display:inline;" src="../assets/img_19.png" alt=""> <span class="sec_index">{{program.id}}</span> </div>
               
@@ -13,6 +13,7 @@
             <div class="text_1_"></div>
             <div class="text_2_"></div>
       </div>
+      <div ></div>
   </div>
 </template>
 
@@ -30,10 +31,13 @@ export default {
         }).then(response => {
             console.log(response, "success");   // 成功的返回
             this.data_list = response["data"]["data"]
+            
         })
         .catch(error => {
             console.log(error, "error")
         }); // 失败的返回
+
+        
     },
     methods:{
         go_to_detail(program_id){
@@ -41,6 +45,12 @@ export default {
             this.$router.push("/programs/"+program_id.toString())
         }
         
+    },
+    updated (){
+        console.log("commp updated")
+        if(location.hash  != ""){
+            document.getElementById('1_id').scrollIntoView();
+        }
     }
 }
 </script>

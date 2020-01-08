@@ -9,7 +9,7 @@ Vue.use(VueI18n)
 
 let lang_c = localStorage.getItem('locale');
 if(lang_c == null){
-    lang_c = 'zh'
+    lang_c = 'en'
 }
 
 const i18n = new VueI18n({

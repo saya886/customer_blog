@@ -91,6 +91,7 @@ export default {
     // background: rgba(255, 0, 0, 0.445);
     height: 700px;
     padding: 120px 140px 120px 140px;
+    display:none;
 }
 .item{
     // background: rgba(0, 0, 255, 0.384);

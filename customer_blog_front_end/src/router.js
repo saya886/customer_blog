@@ -11,6 +11,8 @@ const scrollBehavior = function (to, from, savedPosition) {
       // 通过 to.hash 的值來找到对应的元素
       selector: to.hash
     }
+  }else{
+    return { x: 0, y: 0 }
   }
 }
 export default new Router({

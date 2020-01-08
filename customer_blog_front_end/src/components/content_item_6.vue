@@ -8,9 +8,15 @@
             <div class="input_lable">
                 <div class="input_lable_tip">*</div>
                 <div class="input_lable_text">Name :</div>
+                
             </div>
             <!-- <div class="input_item"></div> -->
-            <input v-model="name" class="input_item" type="text">
+            <input :style="name_style_dict" v-model="name" class="input_item" type="text">
+            <div class="input_tip_text_">
+            <div v-show="is_show"><div v-show="!name" class="input_tip_text">{{ $t('warn_msg_5')}}</div></div>
+            </div>
+            
+            
         </div>
 
         <div class="input_container">
@@ -19,7 +25,10 @@
                 <div class="input_lable_text">Email :</div>
             </div>
             <!-- <div class="input_item"></div> -->
-            <input v-model="mail" class="input_item" type="text">
+            <input :style="mail_style_dict" v-model="mail" class="input_item" type="text">
+            <div class="input_tip_text_">
+            <div v-show="is_show"><div v-show="!mail" class="input_tip_text">{{ $t('warn_msg_5')}}</div></div>
+            </div>
         </div>
 
         <div class="input_container">
@@ -29,6 +38,7 @@
             </div>
             <!-- <div class="input_item"></div> -->
             <input v-model="tel" class="input_item" type="text">
+
         </div>
 
         <div class="input_container input_container_1">
@@ -37,8 +47,11 @@
                 <div class="input_lable_text">Message :</div>
             </div>
             <!-- <div class="input_item"></div> -->
-            <textarea v-model="message" class="textarea_item">
+            <textarea :style="message_style_dict" v-model="message" class="textarea_item">
             </textarea>
+            <div class="input_tip_text_">
+            <div v-show="is_show"><div v-show="!message" class="input_tip_text">{{ $t('warn_msg_5')}}</div></div>
+            </div>
         </div>
     </div>
     <div class="error_msg">{{error_msg}}</div>
@@ -56,8 +69,15 @@ export default {
             "mail":"",
             "tel":"",
             "message":"",
-            "error_msg":""
+            "error_msg":"",
+            "is_show":false,
+            "name_style_dict":{},
+            "mail_style_dict":{},
+            "message_style_dict":{}
         }
+    },
+    computed:{
+
     },
     methods:{
         send_enquire(){
@@ -65,10 +85,27 @@ export default {
             this.error_msg = ""
             if(this.name == "" || this.mail == "" || this.message == ""){
                 this.error_msg = this.$t('warn_msg_1')
+                this.is_show = true
+                if(this.name == ""){
+                    this.mail_style_dict = {"border":"1px solid red"}
+                }
+                if(this.mail == ""){
+                    this.name_style_dict = {"border":"1px solid red"}
+                }
+                if(this.message == ""){
+                    this.message_style_dict = {"border":"1px solid red"}
+                }
+                
+                return
             }
             let pattern= /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
             if(! pattern.test(this.mail.toString())){
                 this.error_msg = this.$t('warn_msg_2')
+                this.is_show = true
+                this.mail_style_dict = {"border":"1px solid red"}
+                this.name_style_dict = {}
+                this.message_style_dict = {}
+
             }
 
             if(this.error_msg == ""){
@@ -78,11 +115,18 @@ export default {
                     url: "/comment/?name="+this.name+"&mail_addr="+this.mail+"&phone="+this.tel+"&content="+this.message,
                 }).then(response => {
                     console.log(response, "success");   // 成功的返回 
-                    this.error_msg = this.$t('warn_msg_3')    
+                    this.error_msg = this.$t('warn_msg_3')
+                    this.mail_style_dict = {}
+                    this.name_style_dict = {}
+                    this.message_style_dict = {}
                 })
                 .catch(error => {
                     console.log(error, "error")
-                    this.error_msg = this.$t('warn_msg_4')  
+                    this.error_msg = this.$t('warn_msg_4')
+                    this.is_show = true
+                    this.mail_style_dict = {}
+                    this.name_style_dict = {}
+                    this.message_style_dict = {}
                 }); // 失败的返回
             }
             else{
@@ -122,6 +166,8 @@ export default {
     .input_container{
         width: 32%;
         display: inline-block;
+        position:relative;
+        // height:108px;
         .input_lable_tip{
             float: left;
             margin-right: 10px;
@@ -148,7 +194,7 @@ export default {
         line-height: 35px;
     }
     .input_container_1{
-        margin-top: 20px;
+        margin-top: 30px;
         width: 100%;
 
         .input_lable_tip{
@@ -205,5 +251,14 @@ export default {
     font-family: gillsans_light;
     letter-spacing: 1px;
 }
-
+.input_tip_text{
+    color: rgb(187, 0, 0);
+    font-size:14px;
+    margin-top: 10px;
+    position:absolute;
+    bottom:-20px;
+}
+// .input_tip_text_{
+//     height:100px;
+// }
 </style>>

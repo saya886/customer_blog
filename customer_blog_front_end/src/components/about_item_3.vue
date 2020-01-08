@@ -2,7 +2,7 @@
   <div class="main">
       <div class="sec">
           <div class="main_item">
-              <div class="left">=</div>
+              <div class="left">3.</div>
               <img class="logo_center" src="../assets/logo.png" alt="">
               <div class="title_1">CORPORATE  VALUES</div>
 
@@ -79,7 +79,7 @@ export default {
     left: 0px;
     top: 0px;
     background: rgb(83, 83, 83);
-    font-size: 80px;
+    font-size: 50px;
     color: white;
     line-height: 160px;
     text-align: center;

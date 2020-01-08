@@ -28,10 +28,12 @@ export default {
     height:100px;
     font-size: 40px;
     color: white;
-    margin: 0 auto;
+    // margin: 0 auto;
+    float:left;
     margin-top:200px;
-    width: 400px;
-    text-align: center;
+    margin-left:100px;
+    // width: 400px;
+    // text-align: center;
     text-shadow: 5px 5px 8px #000000;
 }
 </style>

@@ -2,14 +2,14 @@
   <div class="main">
       <div class="sec">
           <div class="main_item">
-              <div class="left">=</div>
+              <div class="left">1.</div>
               <div class="right">
                   
               </div>
               <img class="logo_center" src="../assets/logo_dark.png" alt="">
               <div class="title_1">WHO WE ARE</div>
-              <div class="title_2">Curated China</div>
-              <div class="title_3">▶</div>
+              <div class="title_2">CuratedChina</div>
+              <div class="title_3"></div>
 
               <div class="text_div_1">
                     <span class="big_one">U</span>
@@ -92,7 +92,7 @@ export default {
     left: 0px;
     top: 0px;
     background: rgb(83, 83, 83);
-    font-size: 80px;
+    font-size: 50px;
     color: white;
     line-height: 160px;
     text-align: center;

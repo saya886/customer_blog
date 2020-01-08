@@ -14,8 +14,7 @@
             <div class="item_1_"></div>
           <div class="item_2_">
               <div class="content">
-                  Try hovering over the four 
-different building blocks we offered to set up your private inspiring study tour.
+                  Send us a message to get detail list of companies available for visiting and communicating to set up your own inspiring tour
               </div>
           </div>
           <div class="item_1_"></div>
@@ -92,9 +91,9 @@ export default {
     .content{
         padding: 20px;
         color: white;
-        font-size: 20px;
+        font-size: 17px;
         text-align: center;
-        line-height: 50px;
+        line-height: 35px;
         letter-spacing: 1px;
         overflow-y: hidden;
     }
