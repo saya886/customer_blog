@@ -228,7 +228,7 @@ export default {
         display: block;
     }
     .nav_tip{
-        background: red;
+        background: rgb(187, 0, 0);
     }
 }
 .nav_divider{
@@ -246,6 +246,7 @@ export default {
         font-size: 16px;
         height: 30px;
         color: white;
+        transform: translate(0px,5px);
     }
     .nav_link:hover{
         cursor: pointer;
