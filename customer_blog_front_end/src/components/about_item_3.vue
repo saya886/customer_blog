@@ -139,8 +139,8 @@ export default {
   font-size: 90px;
   font-family: gillsans_light;
   position: absolute;
-  left: 700px;
-  bottom: 45px;
+  right: 50px;
+  bottom: 90px;
 }
 .a_3{
   color: rgb(221, 221, 221);

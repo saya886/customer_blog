@@ -1,7 +1,7 @@
 <template>
   <div :style="{height:height_+'px'}" class="main">
 
-      <div :style="{'margin-top':top_pad+'px'}" class="title">We love to.<br>
+      <div :style="{'margin-top':top_pad+'px'}" class="title">We love to<br>
 hear from you.</div>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
             console.log(height_doc);
             if(height_doc > 700){
                 this.height_ = height_doc
-                this.top_pad = height_doc*0.314
+                this.top_pad = height_doc*0.54
             }
         }
         

@@ -174,6 +174,7 @@ export default {
     font-family: gillsans_light;
     color: gray;
     transform: rotate(90deg);
+    z-index:10000;
 }
 .detail_button:hover{
     text-shadow: 0px 0px 20px #b1b1b1;
