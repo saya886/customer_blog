@@ -45,5 +45,10 @@ nginx user 设置为root
 web.curatedchina.com
 www.curatedchina.com
 47.244.3.155
+0.185
+0.228
+0.285
+0.257
+0.314
 
 

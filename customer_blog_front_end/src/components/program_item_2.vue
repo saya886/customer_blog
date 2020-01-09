@@ -14,7 +14,7 @@
             <div class="item_1_"></div>
           <div class="item_2_">
               <div class="content">
-                  Send us a message to get detail list of companies available for visiting and communicating to set up your own inspiring tour
+                  Send us a message to get detail list of companies available for visiting and communicating to set up your own inspiring tour.
               </div>
           </div>
           <div class="item_1_"></div>

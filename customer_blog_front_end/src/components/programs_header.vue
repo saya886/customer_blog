@@ -1,7 +1,7 @@
 <template>
-  <div class="main">
+  <div :style="{height:height_+'px'}" class="main">
 
-      <div class="title_1">Our First and Foremost Goal </div>
+      <div :style="{'margin-top':top_pad+'px'}" class="title_1">Our First and Foremost Goal </div>
       <div class="title_2">To create the most practical and inspiring
 learning journey in China that you
 treasure.</div>
@@ -11,6 +11,28 @@ treasure.</div>
 <script>
 import header_menu from './header_menu.vue'
 export default {
+    data(){
+        return{
+            "height_":"",
+            "top_pad":""
+        }
+    },
+    mounted(){
+        var userAgentInfo = navigator.userAgent;
+        var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+        var flag = true;  
+        for (var v = 0; v < Agents.length; v++) {  
+            if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+        }
+        if(flag){
+            let height_doc = document.documentElement.clientHeight
+            console.log(height_doc);
+            if(height_doc > 700){
+                this.height_ = height_doc
+                this.top_pad = height_doc*0.285
+            }
+        }
+    },
     components: {
         header_menu
     }

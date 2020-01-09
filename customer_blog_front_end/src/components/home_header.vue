@@ -1,8 +1,8 @@
 <template>
-<div class="main">
+<div :style="{height:height_+'px'}" class="main">
     
     <div class="content_1">
-        <div class="title_1 title">Broaden your horizon</div>
+        <div :style="{'margin-top':top_pad+'px'}" class="title_1 title">Broaden your horizon</div>
         <div class="title">by a curated study tour in China</div>
         <div class="divider"></div>
         <div class="icon_group">
@@ -31,10 +31,28 @@
 </template>
 
 <script>
-import header_menu from './header_menu.vue'
 export default {
-    components: {
-        header_menu
+    data(){
+        return{
+            "height_":"",
+            "top_pad":""
+        }
+    },
+    mounted(){
+        var userAgentInfo = navigator.userAgent;
+        var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+        var flag = true;  
+        for (var v = 0; v < Agents.length; v++) {  
+            if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+        }
+        if(flag){
+            let height_doc = document.documentElement.clientHeight
+            console.log(height_doc);
+            if(height_doc > 700){
+                this.height_ = height_doc
+                this.top_pad = height_doc*0.185
+            }
+        }
     },
     methods:{
         change_route(path){

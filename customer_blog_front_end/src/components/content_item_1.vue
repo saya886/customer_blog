@@ -28,12 +28,12 @@ export default {
 <style lang="less" scoped>
 .main{
     // background: red;
-    height: 650px;
+    height: 450px;
     width: 1200px;
     margin: 0 auto;
 }
 .title{
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     color: rgb(87, 87, 87);
     font-size: 30px;
@@ -52,6 +52,7 @@ export default {
     color: rgb(83, 83, 83);
     font-size: 20px;
     line-height: 35px;
+    text-align:center;
 }
 .main_1{
     // background: red;
