@@ -171,7 +171,14 @@ export default {
         }
     }
     
-    .item_mid:hover{
+    
+
+    .item_move_left{
+        background: rgb(255, 255, 255);
+    }
+}
+
+.item_row:hover{
         .item_move_right{
             transform:translateX(400px);
         }
@@ -179,10 +186,7 @@ export default {
             transform:translateX(-400px);
         }
     }
-    .item_move_left{
-        background: rgb(255, 255, 255);
-    }
-}
+    
 .item_content_1{
     
     font-size: 50px;

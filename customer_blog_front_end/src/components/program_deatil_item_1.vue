@@ -3,38 +3,38 @@
 
     <div class="main_header">
 
-      <div class="main_header_title">{{data.title_1}}{{data.title_2}}</div>
+      <div class="main_header_title">{{data.title_1}} {{data.title_2}}</div>
       <div class="main_header_title_2">{{data.desc}}</div>
   </div>
 
   <div class="content_container">
-    <div class="title">{{data.title_1}}{{data.title_2}}</div>
+    <div class="title">{{data.title_1}} {{data.title_2}}</div>
     <div class="dvider"></div>
     <div v-html="data.content" class="content"></div>
   </div>
 
   <div class="dropdown_container">
     <div class="drop_down_item">
-      <div class="drop_down_item_">
-        <div class="drop_down_control">+</div>
-        <div class="drop_down_title">Learning objectives</div>
-        <div v-html="data.learning_objectives" class="drop_down_content"></div>
+      <div  class="drop_down_item_">
+        <div @click="learning_objectives_=!learning_objectives_" class="drop_down_control">+</div>
+        <div @click="learning_objectives_=!learning_objectives_" class="drop_down_title">Learning objectives</div>
+        <div v-show="learning_objectives_" v-html="data.learning_objectives" class="drop_down_content"></div>
       </div>
     </div>
 
     <div class="drop_down_item">
-      <div class="drop_down_item_">
-        <div class="drop_down_control">+</div>
-        <div class="drop_down_title">Itinerary</div>
-        <div v-html="data.details" class="drop_down_content"></div>
+      <div  class="drop_down_item_">
+        <div @click="ltinerary_=!ltinerary_" class="drop_down_control">+</div>
+        <div @click="ltinerary_=!ltinerary_" class="drop_down_title">Itinerary</div>
+        <div v-show="ltinerary_" v-html="data.ltinerary" class="drop_down_content"></div>
       </div>
     </div>
 
     <div class="drop_down_item">
-      <div class="drop_down_item_">
-        <div class="drop_down_control">+</div>
-        <div class="drop_down_title">Details</div>
-        <div v-html="data.content" class="drop_down_content"></div>
+      <div  class="drop_down_item_">
+        <div @click="details_=!details_" class="drop_down_control">+</div>
+        <div @click="details_=!details_" class="drop_down_title">Details</div>
+        <div v-show="details_" v-html="data.details" class="drop_down_content"></div>
       </div>
     </div>
 
@@ -54,7 +54,11 @@ data(){
         "learning_objectives":"",
         "ltinerary":"",
         "details":"",
-      }
+        
+      },
+      "learning_objectives_":false,
+      "ltinerary_":false,
+      "details_":false
   }
 },
 mounted(){
@@ -151,7 +155,7 @@ methods:{
     position:relative;
     .drop_down_title{
       font-size:25px;
-      line-height:60px;
+      line-height:50px;
       font-family: gillsans_light;
       height:50px;
       // border-bottom:2px solid gray;
@@ -160,7 +164,7 @@ methods:{
       position:absolute;
       right:0px;
       font-size:30px;
-      line-height:60px;
+      line-height:50px;
       font-family: gillsans_light;
       cursor: pointer;
       color:#c50000;
@@ -168,14 +172,14 @@ methods:{
     .drop_down_content{
       margin-top:30px;
       margin-bottom:30px;
-      display:none;
+      // display:none;
       // transition:display 2s;
     }
   }
 }
-.drop_down_item:hover{
-  .drop_down_content{
-    display:block;
-  }
-}
+// .drop_down_item:hover{
+//   .drop_down_content{
+//     display:block;
+//   }
+// }
 </style>

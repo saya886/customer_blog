@@ -7,7 +7,7 @@ class blog_instance_admin(admin.ModelAdmin):
     list_display = ['title', 'author','push_time']
 
 class program_instance_admin(admin.ModelAdmin):
-    list_display = ['title_1', 'title_2', 'push_time']
+    list_display = ['id','title_1', 'title_2', 'push_time']
 
 class leave_comment_admin(admin.ModelAdmin):
     list_display = ['name', 'mail_addr', 'phone','content','push_time']

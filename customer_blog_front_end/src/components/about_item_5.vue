@@ -65,6 +65,7 @@ export default {
 .main{
     height: 900px;
     background: rgb(240, 240, 240);
+    display:none;
 }
 .title{
   font-size: 48px;
