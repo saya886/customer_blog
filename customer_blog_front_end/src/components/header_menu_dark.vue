@@ -31,7 +31,7 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <div @click="change_route('programs')" class="nav_link">Programs</div>
+                <div @click="change_route('programs')" class="nav_link">Program</div>
                 <div class="nav_drop_down">
                     
                 </div>
@@ -39,7 +39,7 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <div @click="change_route('blogs')" class="nav_link">Blogs</div>
+                <div @click="change_route('blogs')" class="nav_link">Blog</div>
                 <div class="nav_drop_down">
                     
                 </div>

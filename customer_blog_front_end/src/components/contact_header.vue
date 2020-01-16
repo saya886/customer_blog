@@ -25,9 +25,9 @@ export default {
         if(flag){
             let height_doc = document.documentElement.clientHeight
             console.log(height_doc);
-            if(height_doc > 700){
+            if(height_doc > 300){
                 this.height_ = height_doc
-                this.top_pad = height_doc*0.54
+                this.top_pad = height_doc*0.5
             }
         }
         

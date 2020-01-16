@@ -133,11 +133,17 @@ methods:{
     font-size:16px;
     line-height:25px;
     font-family: gillsans_light;
+
   }
   /deep/ p{
     font-size:16px;
     line-height:25px;
     font-family: gillsans_light;
+    
+  }
+  /deep/ img{
+    margin: 0 auto;
+    display: block;
   }
 
 }
@@ -193,6 +199,11 @@ methods:{
     font-size:16px;
     line-height:25px;
     font-family: gillsans_light;
+    
+  }
+  /deep/ img{
+    margin: 0 auto;
+    display: block;
   }
       // display:none;
       // transition:display 2s;
