@@ -15,7 +15,7 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <div @click="change_route('')"  class="nav_link">Home</div>
+                <div @click="change_route('')"  class="nav_link">{{ $t('m_1')}}</div>
                 <div class="nav_drop_down">
 
                 </div>
@@ -23,7 +23,7 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <div @click="change_route('about')" class="nav_link">About</div>
+                <div @click="change_route('about')" class="nav_link">{{ $t('m_2')}}</div>
                 <!-- <div class="nav_link">About</div> -->
                 <div class="nav_drop_down">
                     
@@ -32,7 +32,7 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <div @click="change_route('programs')" class="nav_link">Program</div>
+                <div @click="change_route('programs')" class="nav_link">{{ $t('m_3')}}</div>
                 <div class="nav_drop_down">
                     
                 </div>
@@ -40,7 +40,7 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <div @click="change_route('blogs')" class="nav_link">Blog</div>
+                <div @click="change_route('blogs')" class="nav_link">{{ $t('m_4')}}</div>
                 <!-- <div class="nav_link">Blogs</div> -->
                 <div class="nav_drop_down">
                     
@@ -49,7 +49,7 @@
 
             <div class="nva_item">
                 <div class="nav_tip"></div>
-                <div @click="change_route('contact')" class="nav_link">Contact</div>
+                <div @click="change_route('contact')" class="nav_link">{{ $t('m_5')}}</div>
                 <div class="nav_drop_down">
                     
                 </div>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="nva_item nva_buttom">
-                <div @click="change_route('contact#enquire')" class="nav_link">ENQUIRE</div>
+                <div @click="change_route('contact#enquire')" class="nav_link">{{ $t('m_6')}}</div>
             </div>
 
         </div>
@@ -90,7 +90,7 @@
 export default {
         data(){
         return{
-            'lang':'中文',
+            'lang':'English',
             'color':'#ffffff00'
         }
     },

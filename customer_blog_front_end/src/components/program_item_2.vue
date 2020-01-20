@@ -4,17 +4,17 @@
           <div class="item_1">
               <img class="img_1" src="../assets/img_32.png" alt="">
               <div class="img_abs"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">I :</span></div>
-              Theoretical</div>
+              {{ $t('p_3')}}</div>
           <div class="item_2"></div>
           <div class="item_1">
               <img class="img_2" src="../assets/img_33.png" alt="">
               <div class="img_abs_1"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅱ :</span></div>
-              Practical</div>
+              {{ $t('p_4')}}</div>
 
             <div class="item_1_"></div>
           <div class="item_2_">
               <div class="content">
-                  Send us a message to get detail list of companies available for visiting and communicating to set up your own inspiring tour.
+                  {{ $t('p_5')}}
               </div>
           </div>
           <div class="item_1_"></div>
@@ -22,12 +22,12 @@
           <div class="item_1">
               <img class="img_3" src="../assets/img_34.png" alt="">
               <div class="img_abs_2"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅲ :</span></div>
-              Entrepreneurial</div>
+              {{ $t('p_6')}}</div>
           <div class="item_2"></div>
           <div class="item_1">
               <img class="img_2" src="../assets/img_35.png" alt="">
               <div class="img_abs_3"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅳ:</span></div>
-              Cultural</div>
+              {{ $t('p_7')}}</div>
 
       </div>
   </div>

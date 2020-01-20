@@ -2,30 +2,30 @@
 <div :style="{height:height_+'px'}" class="main">
     
     <div class="content_1">
-        <div :style="{'margin-top':top_pad+'px'}" class="title_1 title">Broaden your horizon</div>
-        <div class="title">by a curated study tour in China</div>
+        <div :style="{'margin-top':top_pad+'px'}" class="title_1 title">{{ $t('h_1')}}</div>
+        <div class="title">{{ $t('h_2')}}</div>
         <div class="divider"></div>
         <div class="icon_group">
             <div class="icon_ietm">
                 <div class="icon_image icon_image_edu"></div>
                 <div class="icon_content">
-                    Educational
+                    {{ $t('h_3')}}
                 </div>
             </div>
             <div class="icon_ietm">
                 <div class="icon_image icon_image_ins"></div>
                 <div class="icon_content">
-                    Insightful
+                    {{ $t('h_4')}}
                 </div>
             </div>
             <div class="icon_ietm">
                 <div class="icon_image icon_image_dyn"></div>
                 <div class="icon_content">
-                    Dynamic
+                    {{ $t('h_5')}}
                 </div>
             </div>
         </div>
-        <div @click="change_route('programs#1_id')" class="center_button">Unlock Trips</div>
+        <div @click="change_route('programs#1_id')" class="center_button">{{ $t('h_6')}}</div>
     </div>
 </div>
 </template>

@@ -1,27 +1,27 @@
 <template>
 <div class="main">
     <div class="main_content">
-    <div class="title_1">Hello.</div>
-    <div class="title_2">Let’s work together to create your fruitful learning experiences in China.</div>
+    <div class="title_1">{{ $t('h_48')}}</div>
+    <div class="title_2">{{ $t('h_49')}}</div>
     <div class="text_item text_1">
         <div class="item_group">
             <div class="icon_item icon_item_1"></div>
-            <div class="value_item">Email  :  hello@curatedchina.com</div>
+            <div class="value_item">{{ $t('h_50')}}</div>
         </div>
     </div>
     <div class="text_item text_2">
         <div class="item_group">
             <div class="icon_item icon_item_2"></div>
-            <div class="value_item">Phone  :  + 86 18001611312</div>
+            <div class="value_item">{{ $t('h_51')}}</div>
         </div>
     </div>
     <div class="text_item text_3">
         <div class="item_group">
             <div class="icon_item icon_item_3"></div>
-            <div class="value_item">Address : Rm 3506, Building #3, No. 277 Zheqiao Rd, Shanghai, China</div>
+            <div class="value_item">{{ $t('h_52')}}</div>
         </div>
     </div>
-    <div @click="change_route('contact#enquire')" class="button_cust">ENQUIRE</div>
+    <div @click="change_route('contact#enquire')" class="button_cust">{{ $t('h_53')}}</div>
     </div>
 
     <div class="abs_img_1"></div>

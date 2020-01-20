@@ -1,8 +1,8 @@
 <template>
   <div :style="{height:height_+'px'}" class="main">
 
-      <div :style="{'margin-top':top_pad+'px'}" class="title">We love to<br>
-hear from you.</div>
+      <div :style="{'margin-top':top_pad+'px'}" class="title">{{ $t('c_1')}}<br>
+{{ $t('c_2')}}</div>
   </div>
 </template>
 

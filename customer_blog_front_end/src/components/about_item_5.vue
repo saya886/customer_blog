@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="title">OUR PARTNERS</div>
+    <div class="title">{{ $t('a_18')}}</div>
     <div class="item_list">
 
       <div class="item">

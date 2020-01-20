@@ -3,17 +3,17 @@
     <div class="main">
     <div class="title">&nbsp;&nbsp;  CuratedChina</div>
     <div class="divider"></div>
-    <div class="conetnt">Design, organize and facilitate tailor-made in-depth study tours around China for all academics and institutions worldwide. We specialize in offering practical interactions with various enterprises and entrepreneurs operated in China to equip you with the latest insights from the Chinese market.</div>
+    <div class="conetnt">{{ $t('h_8')}}</div>
     </div>
 
 
     <div class="main_1">
         <div class="main_1_background">
-        <div class="main_1_content">Confucius, an ancient Chinese sage, said</div>
-        <div class="main_1_content">“ Is it not a pleasure to study and practice what you have learned ？ </div>
-        <div class="main_1_content">Is it not a delight after all to have friends come from afar ？”</div>
-        <div class="main_1_content">“ 学而时习之，不亦说乎？有朋自远方来，不亦乐乎？”</div>
-        <div class="main_1_content"><br>-  孔子</div>
+        <div class="main_1_content">{{ $t('h_9')}}</div>
+        <div class="main_1_content">{{ $t('h_10')}}</div>
+        <div class="main_1_content">{{ $t('h_11')}}</div>
+        <div class="main_1_content">{{ $t('h_12')}}</div>
+        <div class="main_1_content"><br>{{ $t('h_13')}}</div>
         </div> 
     </div>
 </div>

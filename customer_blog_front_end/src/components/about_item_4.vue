@@ -1,9 +1,9 @@
 <template>
   <div class="main">
-    <div class="t_1">Our Vision</div>
-    <div class="t_2">To let the world know more about China.</div>
-    <div class="t_1">Our Mission</div>
-    <div class="t_2">To enrich the world’s perception of China through designing and organizing tailor-made in-depth study tours for all academics and institutions; To engage cross-board communication and broaden global perspectives.</div>
+    <div class="t_1">{{ $t('a_14')}}</div>
+    <div class="t_2">{{ $t('a_15')}}</div>
+    <div class="t_1">{{ $t('a_16')}}</div>
+    <div class="t_2">{{ $t('a_17')}}</div>
   </div>
 </template>
 

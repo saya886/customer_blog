@@ -1,13 +1,13 @@
 <template>
 <a id="enquire">
 <div class="main">
-    <div class="title">ENQUIRE</div>
-    <div class="text">A CuratedChina coordinator will reply to you within 24 hours. <br/>We look forward to hearing from you!</div>
+    <div class="title">{{ $t('h_53')}}</div>
+    <div class="text">{{ $t('h_54')}}<br/>{{ $t('h_55')}}</div>
     <div class="input_group">
         <div class="input_container">
             <div class="input_lable">
                 <div class="input_lable_tip">*</div>
-                <div class="input_lable_text">Name :</div>
+                <div class="input_lable_text">{{ $t('h_56')}}</div>
                 
             </div>
             <!-- <div class="input_item"></div> -->
@@ -22,7 +22,7 @@
         <div class="input_container">
             <div class="input_lable">
                 <div class="input_lable_tip">*</div>
-                <div class="input_lable_text">Email :</div>
+                <div class="input_lable_text">{{ $t('h_57')}}</div>
             </div>
             <!-- <div class="input_item"></div> -->
             <input :style="mail_style_dict" v-model="mail" class="input_item" type="text">
@@ -34,7 +34,7 @@
         <div class="input_container">
             <div class="input_lable">
                 <div class="input_lable_tip input_lable_tip_gray"></div>
-                <div class="input_lable_text">Telephone :</div>
+                <div class="input_lable_text">{{ $t('h_58')}}</div>
             </div>
             <!-- <div class="input_item"></div> -->
             <input v-model="tel" class="input_item" type="text">
@@ -44,7 +44,7 @@
         <div class="input_container input_container_1">
             <div class="input_lable">
                 <div class="input_lable_tip">*</div>
-                <div class="input_lable_text">Message :</div>
+                <div class="input_lable_text">{{ $t('h_59')}}</div>
             </div>
             <!-- <div class="input_item"></div> -->
             <textarea :style="message_style_dict" v-model="message" class="textarea_item">
@@ -55,7 +55,7 @@
         </div>
     </div>
     <div class="error_msg">{{error_msg}}</div>
-    <div @click="send_enquire()" class="center_cust_button">SEND MY ENQUIRY</div>
+    <div @click="send_enquire()" class="center_cust_button">{{ $t('h_60')}}</div>
     <div class="abs_img_3"></div>
 </div>
 </a>

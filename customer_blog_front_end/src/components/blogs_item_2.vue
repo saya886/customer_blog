@@ -1,8 +1,8 @@
 <template>
   <div class="main">
       <img class="logo_center" src="../assets/logo.png" alt="">
-      <div class="title">More good things will be produced for<br>
-you to watch, visit and read.</div>
+      <div class="title">{{ $t('b_3')}}<br>
+{{ $t('b_4')}}</div>
   </div>
 </template>
 

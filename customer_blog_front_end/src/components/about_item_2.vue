@@ -4,8 +4,8 @@
           <div class="main_item">
               <div class="left">2.</div>
               <img class="logo_center" src="../assets/logo_dark.png" alt="">
-              <div class="title_1">ABOUT US</div>
-              <div class="title_2">CuratedChina is affiliated to the Silk Road Cities Alliance (SRCA) and the Silk Road SMEs Development Alliance (SMEDA). SRCA was initiated by Mr. Li Zhaoxing, the former Minister of Foreign Affairs of China, and Mr. Francesco Rutelli, the former Deputy Prime Minister of Italy. It was officially established in Hongkong in 2014, aiming at promoting cooperation in various field among cities lying along the “One Belt One Road” route by mobilizing, organizing and coordinating domestic and overseas social resources. SMEDA is one of SRCA’s steering committee devoted into helping enterprises growing and providing consulting services related to policies, laws, finance and so on. CuratedChina company is incubated by the SRCA and SMEDA to promote global educational communication. We focus 100% on developing curated study tour around China and we are based strategically in the international metropolis - Shanghai.</div>
+              <div class="title_1">{{ $t('a_5')}}</div>
+              <div class="title_2">{{ $t('a_6')}}</div>
           </div>
       </div>
   </div>
@@ -96,8 +96,8 @@ export default {
     width: 75%;
     height: 340px;
     margin: 0 auto;
-    margin-top: 30px;
-    line-height: 20px;
+    margin-top: 60px;
+    line-height: 23px;
     text-align:justify;
     overflow-y: hidden;
     // letter-spacing:1px;

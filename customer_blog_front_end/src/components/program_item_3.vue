@@ -1,12 +1,12 @@
 <template>
   <div class="main">
       <div class="content">
-          <div class="text_1">Have more<br>
-specific demand?</div>
-          <div @click="change_route('contact#enquire')" class="button_">Contact Us</div>
-          <div class="text_2">We’ll do our best<br>
-to accommodate<br>
-your needs!</div>
+          <div class="text_1">{{ $t('p_8')}}<br>
+{{ $t('p_9')}}</div>
+          <div @click="change_route('contact#enquire')" class="button_">{{ $t('p_10')}}</div>
+          <div class="text_2">{{ $t('p_11')}}<br>
+{{ $t('p_12')}}<br>
+{{ $t('p_13')}}</div>
       </div>
   </div>
 </template>

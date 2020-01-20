@@ -50,5 +50,6 @@ www.curatedchina.com
 0.285
 0.257
 0.314
+{{ $t('c_')}}
 
 

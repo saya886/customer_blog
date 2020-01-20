@@ -7,8 +7,8 @@
                   
               </div>
               <img class="logo_center" src="../assets/logo_dark.png" alt="">
-              <div class="title_1">WHO WE ARE</div>
-              <div class="title_2">CuratedChina</div>
+              <div class="title_1">{{ $t('a_3')}}</div>
+              <div class="title_2">{{ $t('a_4')}}</div>
               <div class="title_3"></div>
 
               <div class="text_div_1">

@@ -1,18 +1,18 @@
 <template>
 <div class="main">
-    <div class="header_content">We diversify and enrich your learning experiences in China <br>
-with the following four valuable building blocks.</div>
+    <div class="header_content">{{ $t('h_14')}} <br>
+{{ $t('h_15')}}</div>
     <div class="item_group">
         <div class="item_row">
             <div class="item item_left">
                 <div class="item_d1 item_content_1">
                 <div class="img_abs"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">I :</span></div>
-                Theoretical</div> 
+                {{ $t('h_16')}}</div> 
             </div>
             <div class="item item_mid">
-                <div class="item_d2 item_content_2">Sitting in the classroom of China’s top <br>
-universities and absorbing the <br>
-knowledge from prestigious professors.</div>
+                <div class="item_d2 item_content_2">{{ $t('h_17')}}<br>
+{{ $t('h_18')}}<br>
+{{ $t('h_19')}}</div>
                 <div class="item_move item_move_right">
                     <div class="item_content_3 item_content_img_1"></div>
                 </div>
@@ -28,26 +28,26 @@ knowledge from prestigious professors.</div>
             <div class="item item_mid">
                 <div class="item_d1 item_content_1">
                 <div class="img_abs_1"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅱ:</span></div>
-                Practical</div>
+                {{ $t('h_20')}}</div>
                 <div class="item_move item_move_left">
                     <div class="item_content_3 item_content_img_2"></div> 
                 </div>
             </div>
             <div class="item item_right">
-                <div class="item_content_2 item_d2">Visiting the leading enterprises and <br>
-attending workshops to interact <br>with the entrepreneurs that have rich <br>hands-on experiences in Chinese market</div>
+                <div class="item_content_2 item_d2">{{ $t('h_21')}}<br>
+{{ $t('h_22')}}<br>{{ $t('h_23')}}<br>{{ $t('h_24')}}</div>
             </div>
         </div>
 
         <div class="item_row">
             <div class="item item_left">
                 <div class="item_d1 item_content_1"><div class="img_abs_2"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅲ:</span></div>
-                Cultural</div> 
+                {{ $t('h_25')}}</div> 
             </div>
             <div class="item item_mid">
-                <div class="item_d2 item_content_2">Learning the essence of various Chinese<br>traditional culture by talking to <br>the 
-Chinese artisans or craftsmen and <br>
-exploring the historical sites.</div>
+                <div class="item_d2 item_content_2">{{ $t('h_26')}}<br>{{ $t('h_29')}}<br> 
+{{ $t('h_27')}}<br>
+{{ $t('h_28')}}</div>
                 <div class="item_move item_move_right">
                     <div class="item_content_3 item_content_img_3"></div>
                 </div>
@@ -62,13 +62,13 @@ exploring the historical sites.</div>
             </div>
             <div class="item item_mid">
                 <div class="item_d1 item_content_1">
-                <div class="img_abs_2"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅳ:</span></div>Entrepreneurial</div>
+                <div class="img_abs_2"><img class="inline_img" src="../assets/img_39.png"><span class="index_count">Ⅳ:</span></div>{{ $t('h_30')}}</div>
                 <div class="item_move item_move_left">
                     <div class="item_content_3 item_content_img_4"></div> 
                 </div>
             </div>
             <div class="item item_right">
-                <div class="item_content_2 item_d2">Getting valuable career development suggestions; Help facilitating or launching business projects in Chinese market.</div>
+                <div class="item_content_2 item_d2">{{ $t('h_31')}}</div>
             </div>
         </div>
 

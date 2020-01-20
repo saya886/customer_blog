@@ -1,7 +1,7 @@
 <template>
 <div class="main">
     <div class="item">
-        <div class="title">Testimonials</div>
+        <div class="title">{{ $t('h_47')}}</div>
         <div class="divider"></div>
         <div class="text_item">{{c_item.message}}</div>
         <div class="icon_group">

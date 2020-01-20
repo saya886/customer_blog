@@ -1,10 +1,8 @@
 <template>
   <div :style="{height:height_+'px'}" class="main">
 
-      <div :style="{'margin-top':top_pad+'px'}" class="title_1">Our First and Foremost Goal </div>
-      <div class="title_2">To create the most practical and inspiring
-learning journey in China that you
-treasure.</div>
+      <div :style="{'margin-top':top_pad+'px'}" class="title_1">{{ $t('p_1')}}</div>
+      <div class="title_2">{{ $t('p_2')}}</div>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <div :style="{height:height_+'px'}" class="main">
       
-      <div :style="{'margin-top':top_pad+'px'}" class="title_1">Explore China with Us<br>
-Stories. Inspirations. Moments</div>
+      <div :style="{'margin-top':top_pad+'px'}" class="title_1">{{ $t('b_1')}}<br>
+{{ $t('b_2')}}</div>
   </div>
 </template>
 

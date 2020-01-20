@@ -4,19 +4,19 @@
           <div class="main_item">
               <div class="left">3.</div>
               <img class="logo_center" src="../assets/logo.png" alt="">
-              <div class="title_1">CORPORATE  VALUES</div>
+              <div class="title_1">{{ $t('a_7')}}</div>
 
               <div class="title_2">
-                <div class="left_">Genuine</div>
-                <div class="right_">Diversity</div>
+                <div class="left_">{{ $t('a_8')}}</div>
+                <div class="right_">{{ $t('a_9')}}</div>
               </div>
               <div class="title_2">
-                <div class="left_">Trustworthy</div>
-                <div class="right_">Innovation</div>
+                <div class="left_">{{ $t('a_10')}}</div>
+                <div class="right_">{{ $t('a_11')}}</div>
               </div>
               <div class="title_2">
-                <div class="left_">Detail oriented</div>
-                <div class="right_">Entrepreneurial spirit</div>
+                <div class="left_">{{ $t('a_12')}}</div>
+                <div class="right_">{{ $t('a_13')}}</div>
               </div>
 
               <div class="a_1">V</div>
