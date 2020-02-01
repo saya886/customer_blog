@@ -16,7 +16,7 @@
   <div class="dropdown_container">
     <div class="drop_down_item">
       <div  class="drop_down_item_">
-        <div @click="learning_objectives_=!learning_objectives_" class="drop_down_control">+</div>
+        <div @click="learning_objectives_=!learning_objectives_" class="drop_down_control">{{learning_objectives_status}}</div>
         <div @click="learning_objectives_=!learning_objectives_" class="drop_down_title">{{ $t('b_1_1')}}</div>
         <div v-show="learning_objectives_" v-html="data.learning_objectives" class="drop_down_content"></div>
       </div>
@@ -24,7 +24,7 @@
 
     <div class="drop_down_item">
       <div  class="drop_down_item_">
-        <div @click="ltinerary_=!ltinerary_" class="drop_down_control">+</div>
+        <div @click="ltinerary_=!ltinerary_" class="drop_down_control">{{ltinerary_status}}</div>
         <div @click="ltinerary_=!ltinerary_" class="drop_down_title">{{ $t('b_1_2')}}</div>
         <div v-show="ltinerary_" v-html="data.ltinerary" class="drop_down_content"></div>
       </div>
@@ -32,7 +32,7 @@
 
     <div class="drop_down_item">
       <div  class="drop_down_item_">
-        <div @click="details_=!details_" class="drop_down_control">+</div>
+        <div @click="details_=!details_" class="drop_down_control">{{details_status}}</div>
         <div @click="details_=!details_" class="drop_down_title">{{ $t('b_1_3')}}</div>
         <div v-show="details_" v-html="data.details" class="drop_down_content"></div>
       </div>
@@ -72,6 +72,26 @@ mounted(){
     .catch(error => {
         console.log(error, "error")
     }); // 失败的返回
+},
+computed:{
+  learning_objectives_status(){
+    if(this.learning_objectives_){
+      return "-"
+    }
+    return "+"
+  },
+  ltinerary_status(){
+    if(this.ltinerary_){
+      return "-"
+    }
+    return "+"
+  },
+  details_status(){
+    if(this.details_){
+      return "-"
+    }
+    return "+"
+  }
 },
 methods:{
   
