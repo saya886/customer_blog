@@ -2,10 +2,10 @@
   <div class="main">
     <div class="title">CuratedChina</div>
     <div class="dvider"></div>
-    <div class="content">Removes boundaries of language barriers<br>
-Find the key stakeholders and handle all logistics<br>
-Help connecting and manufacturing relationships</div>
-    <div @click="change_route('contact#enquire')" class="center_button">Talk to a Specialist</div>
+    <div class="content">{{ $t('b_1_4')}}<br>
+{{ $t('b_1_5')}}<br>
+{{ $t('b_1_6')}}</div>
+    <div @click="change_route('contact#enquire')" class="center_button">{{ $t('b_1_7')}}</div>
   </div>
 </template>
 
@@ -43,12 +43,12 @@ change_route(path){
   text-align: center;
   font-family: gillsans_light;
   letter-spacing: 1px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .content{
   padding-top: 40px;
   text-align:center;
-  font-size: 25px;
+  font-size: 16px;
   color: white;
   line-height: 40px;
   text-align: center;
@@ -64,7 +64,7 @@ change_route(path){
     text-align: center;
     border:2px solid white;
     line-height: 35px;
-    font-size: 19px;
+    font-size: 16px;
     color: white;
     cursor:pointer;
     letter-spacing: 1px;

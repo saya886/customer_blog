@@ -2,7 +2,7 @@
   <div class="main">
 <header_menu_dark/>
       <blogs_header/>
-
+<blogs_item_1/>
       
 <blogs_item_2/>
 

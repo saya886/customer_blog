@@ -49,7 +49,7 @@ export default {
 }
 .title{
     height:100px;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     // margin: 0 auto;
     float:left;

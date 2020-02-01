@@ -90,7 +90,7 @@ export default {
     font-family: gillsans_light;
 }
 .title_2{
-    font-size: 15px;
+    font-size: 16px;
     color: rgb(83, 83, 83);
     font-family: gillsans_light;
     width: 75%;

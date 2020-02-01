@@ -17,7 +17,7 @@
     <div class="drop_down_item">
       <div  class="drop_down_item_">
         <div @click="learning_objectives_=!learning_objectives_" class="drop_down_control">+</div>
-        <div @click="learning_objectives_=!learning_objectives_" class="drop_down_title">Learning objectives</div>
+        <div @click="learning_objectives_=!learning_objectives_" class="drop_down_title">{{ $t('b_1_1')}}</div>
         <div v-show="learning_objectives_" v-html="data.learning_objectives" class="drop_down_content"></div>
       </div>
     </div>
@@ -25,7 +25,7 @@
     <div class="drop_down_item">
       <div  class="drop_down_item_">
         <div @click="ltinerary_=!ltinerary_" class="drop_down_control">+</div>
-        <div @click="ltinerary_=!ltinerary_" class="drop_down_title">Itinerary</div>
+        <div @click="ltinerary_=!ltinerary_" class="drop_down_title">{{ $t('b_1_2')}}</div>
         <div v-show="ltinerary_" v-html="data.ltinerary" class="drop_down_content"></div>
       </div>
     </div>
@@ -33,7 +33,7 @@
     <div class="drop_down_item">
       <div  class="drop_down_item_">
         <div @click="details_=!details_" class="drop_down_control">+</div>
-        <div @click="details_=!details_" class="drop_down_title">Details</div>
+        <div @click="details_=!details_" class="drop_down_title">{{ $t('b_1_3')}}</div>
         <div v-show="details_" v-html="data.details" class="drop_down_content"></div>
       </div>
     </div>
@@ -92,7 +92,7 @@ methods:{
     font-size: 40px;
     color: white;
     margin: 0 auto;
-    margin-top:200px;
+    margin-top:250px;
     text-align: center;
     text-shadow: 2px 2px 8px #000000;
 }
@@ -170,8 +170,8 @@ methods:{
     width:80%;
     margin:0 auto;
     position:relative;
-    .drop_down_title{
-      font-size:25px;
+    /deep/ .drop_down_title{
+      font-size:16px;
       line-height:50px;
       font-family: gillsans_light;
       height:50px;

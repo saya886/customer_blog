@@ -29,7 +29,7 @@ export default {
     font-size: 40px;
     color: white;
     margin: 0 auto;
-    margin-top:200px;
+    margin-top:260px;
     text-align: center;
     text-shadow: 2px 2px 8px #000000;
 }

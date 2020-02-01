@@ -48,24 +48,24 @@ export default {
     padding-top:80px;
 }
 .title_1{
-    height:70px;
-    font-size: 50px;
+    height:50px;
+    font-size: 30px;
     color: rgb(39, 39, 39);
     margin: 0 auto;
-    width: 340px;
+    width: 200px;
     margin-top:160px;
     text-align: center;
     // text-shadow: 5px 5px 8px #000000;
     background: rgba(255, 255, 255, 0.685);
     font-weight: 100;
-    line-height: 85px;
+    line-height: 55px;
     font-family: gillsans_light;
 }
 .title_2{
-    font-size: 40px;
+    font-size: 25px;
     color: white;
     margin: 0 auto;
-    margin-top:60px;
+    margin-top:30px;
     // width: 300px;
     text-align: center;
     text-shadow: 5px 5px 8px #000000;

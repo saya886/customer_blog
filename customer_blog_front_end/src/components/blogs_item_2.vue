@@ -24,15 +24,16 @@ export default {
     width: 200px;
     margin: 0 auto;
     display: block;
-    padding-top: 300px;
+    padding-top: 270px;
 }
 .title{
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(218, 218, 218);
     margin-top: 45px;
-    line-height: 70px;
+    line-height: 40px;
     text-align: center;
     font-family: gillsans;
     letter-spacing: 1px;
+    white-space: pre-line;
 }
 </style>

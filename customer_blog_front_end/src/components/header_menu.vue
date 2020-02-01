@@ -189,12 +189,12 @@ export default {
         bottom: 10px;
         width: 100%;
         color: white;
-        font-size: 20px;
+        font-size: 16px;
         text-shadow: 5px 5px 8px #000000;
 
     }
     .nav_link_{
-        font-size: 18px;
+        font-size: 16px;
     }
     .nav_link:hover{
         cursor:pointer;
@@ -220,7 +220,7 @@ export default {
         }
         a{
             color: white;
-            font-size: 20px;
+            font-size: 16px;
         }
     }
 }

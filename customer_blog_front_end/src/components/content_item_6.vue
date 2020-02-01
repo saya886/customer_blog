@@ -147,13 +147,13 @@ export default {
     position: relative;
 }
 .title{
-    font-size: 40px;
+    font-size: 30px;
     color: gray;
     text-align: center;
 }
 .text{
     margin-top: 25px;
-    font-size: 20px;
+    font-size: 16px;
     color: gray;
     text-align: center;
 }
@@ -171,14 +171,14 @@ export default {
         .input_lable_tip{
             float: left;
             margin-right: 10px;
-            font-size: 18px;
+            font-size: 16px;
             color: rgb(255, 0, 0);
         }
         .input_lable_tip_gray{
             color: gray;
         }
         .input_lable_text{
-            font-size: 18px;
+            font-size: 16px;
             color: gray;
         }
     }
@@ -186,7 +186,7 @@ export default {
         margin-top: 20px;
         width: 80%;
         height: 35px;
-        font-size: 20px;
+        font-size: 16px;
           -webkit-user-select:auto; /*webkit浏览器*/  
         user-select:auto;
         -o-user-select:auto;
@@ -200,11 +200,11 @@ export default {
         .input_lable_tip{
             float: left;
             margin-right: 10px;
-            font-size: 18px;
+            font-size: 16px;
             color: rgb(255, 0, 0);
         }
         .input_lable_text{
-            font-size: 18px;
+            font-size: 16px;
             color: gray;
         }
         .textarea_item{
@@ -223,7 +223,7 @@ export default {
     text-align: center;
     border:2px solid gray;
     line-height: 35px;
-    font-size: 18px;
+    font-size: 16px;
     color: gray;
     cursor:pointer;
     margin: 0 auto;

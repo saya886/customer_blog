@@ -53,12 +53,12 @@ export default {
 }
 .title_1{
     color: white;
-    font-size: 40px;
+    font-size: 25px;
 }
 .title_2{
     margin-top:10px;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom:20px;
 }
 .text_item{
@@ -108,7 +108,7 @@ export default {
     text-align: center;
     border:2px solid white;
     line-height: 35px;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     cursor:pointer;
 }

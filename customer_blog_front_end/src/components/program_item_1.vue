@@ -3,7 +3,7 @@
       <div  v-bind:id="program.id + '_id'" v-for="program in data_list" class="sec">
           <div class="ubclock_txt">Unlock</div>
           <div class="main_item">
-              <div @click="go_to_detail(program.id)" class="detail_button">See Details</div>
+              <div @click="go_to_detail(program.id)" class="detail_button">{{ $t('p_1_1')}}</div>
               <img @click="go_to_detail(program.id)" class="icon" v-bind:src="program.program_img" alt="">
               <div class="icon_key"><img style="margin-top:10px;display:inline;" src="../assets/img_19.png" alt=""> <span class="sec_index">{{program.id}}</span> </div>
               
@@ -161,7 +161,7 @@ export default {
 .detail_button{
     z-index: 1;
     position: absolute;
-    font-size: 30px;
+    font-size: 20px;
     bottom: 30px;
     right: -200px;
     font-family: gillsans_light;

@@ -50,7 +50,7 @@ export default {
 }
 .conetnt{
     color: rgb(83, 83, 83);
-    font-size: 20px;
+    font-size: 16px;
     line-height: 35px;
     text-align:center;
 }

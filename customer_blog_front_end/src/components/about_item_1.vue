@@ -113,19 +113,19 @@ export default {
 
 }
 .title_1{
-    font-size: 48px;
+    font-size: 30px;
     color: rgb(83, 83, 83);
     margin-top: 90px;
     text-align: center;
 }
 .title_2{
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(83, 83, 83);
     margin-top: 30px;
     text-align: center;
 }
 .title_3{
-    font-size: 30px;
+    font-size: 16px;
     color: rgb(83, 83, 83);
     margin-top: 45px;
     text-align: center;

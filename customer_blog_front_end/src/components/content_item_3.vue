@@ -59,7 +59,7 @@ export default {
     }
     .main_text{
         color: white;
-        font-size: 30px;
+        font-size: 16px;
         line-height: 45px;
         text-align: center;
         letter-spacing:1px;

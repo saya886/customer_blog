@@ -80,7 +80,7 @@ export default {
     margin-top: 10px;
     width: 1000px;  
     height: 60px;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     text-align: center;
     text-shadow: 5px 5px 8px #000000;
@@ -142,7 +142,7 @@ export default {
         .icon_content{
             text-align: center;
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 24px;
         }
 
@@ -157,7 +157,7 @@ export default {
     text-align: center;
     border:3px solid white;
     line-height: 35px;
-    font-size: 19px;
+    font-size: 16px;
     color: white;
     cursor:pointer;
     

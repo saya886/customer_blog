@@ -15,7 +15,7 @@ export default {
 
 <style lang="less" scoped>
 .main{
-    height: 688px;
+    height: 550px;
     background: gray;
     background:url("../assets/img_22.png") no-repeat center center;
     background-size: cover;
@@ -23,18 +23,18 @@ export default {
 }
 .t_1{
   color: aliceblue;
-  font-size: 40px;
+  font-size: 25px;
   font-family: gillsans_light;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 130px;
   letter-spacing:1px;
 }
 .t_2{
   color: aliceblue;
-  font-size: 24px;
+  font-size: 16px;
   font-family: gillsans_light;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   width: 70%;
   margin: 0 auto;
   line-height: 40px;

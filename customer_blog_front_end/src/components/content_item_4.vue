@@ -105,7 +105,7 @@ export default {
     margin-top: 40px;
     text-align: center;
     color: rgb(82, 82, 82);
-    font-size: 36px;
+    font-size: 25px;
 }
 .divider{
     // background: green;
@@ -120,7 +120,7 @@ export default {
 .text_item{
     text-align: center;
     color: rgb(82, 82, 82);;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 45px;
     width: 650px;
     margin: 0 auto;
@@ -138,6 +138,7 @@ export default {
         margin:0 auto;
         height: 50px;
         padding: 2px;
+        text-align:center;
         
         .icon_image{
             // background: red;

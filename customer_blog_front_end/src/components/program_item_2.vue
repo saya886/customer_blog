@@ -59,7 +59,7 @@ export default {
     background: rgb(49, 47, 47);
     height: 220px;
     color: white;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 220px;
     text-align: center;
 }
@@ -91,7 +91,7 @@ export default {
     .content{
         padding: 20px;
         color: white;
-        font-size: 17px;
+        font-size: 16px;
         text-align: center;
         line-height: 35px;
         letter-spacing: 1px;

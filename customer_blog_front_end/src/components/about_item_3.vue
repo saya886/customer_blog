@@ -93,36 +93,36 @@ export default {
 
 }
 .title_1{
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     margin-top: 45px;
     text-align: center;
     font-family: gillsans_light;
     letter-spacing:8px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .title_2{
     width: 70%;
     margin: 0 auto;
-    margin-bottom:45px; 
+    margin-bottom:25px; 
     .left_{
       display: inline-block;
-      font-size: 24px;
+      font-size: 16px;
       color: rgb(221, 221, 221);
       font-family: gillsans_light;
       width: 50%;
       text-align: right;
-      transform:translate(-60px,0px);
+      transform:translate(-25px,0px);
       letter-spacing:1px;
-    }
+    } 
     .right_{
       display: inline-block;
-      font-size: 24px;
+      font-size: 16px;
       color: rgb(214, 214, 214);
       font-family: gillsans_light;
       width: 50%;
       text-align: left;
-      transform:translate(60px,0px);
+      transform:translate(25px,0px);
       letter-spacing:1px;
     }
 }

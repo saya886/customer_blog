@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="item item_right">
-                <div class="item_content_2 item_d2">{{ $t('h_31')}}</div>
+                <div class="item_content_2 item_d2">{{ $t('h_31')}}<br>{{ $t('h_31_')}}</div>
             </div>
         </div>
 
@@ -91,7 +91,7 @@ export default {
     padding-top:134px;
     padding-bottom:100px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: gray;
     line-height: 50px;
 }
@@ -189,7 +189,7 @@ export default {
     
 .item_content_1{
     
-    font-size: 50px;
+    font-size: 30px;
     color: rgb(241, 241, 241);
     display: flex;
     flex-direction: row;
@@ -197,7 +197,7 @@ export default {
     justify-content:center;
 }
 .item_content_2{
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(241, 241, 241);
     display: flex;
     flex-direction: row;
@@ -227,12 +227,12 @@ export default {
 .img_abs{
     position:absolute;
     top:120px;
-    left:80px;
+    left:190px;
 }
 .img_abs_1{
     position:absolute;
     top:120px;
-    left:110px;
+    left:190px;
 }
 .img_abs_2{
     position:absolute;
