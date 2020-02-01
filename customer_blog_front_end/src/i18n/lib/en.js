@@ -40,7 +40,7 @@ export default {
     "h_28":"exploring the historical sites.",
     "h_29":"traditional culture by talking to ",
     "h_30":"Entrepreneurial",
-    "h_31":"Getting valuable career development suggestions; Help facilitating or launching business projects in Chinese market.",
+    "h_31":"Getting valuable career development suggestions;",
     "h_31_":"Help facilitating or launching business projects in Chinese market.",
     "h_32":"OUR STRENGTH I",
     "h_33":"Focus exclusively on China ",
