@@ -25,10 +25,11 @@ export default {
     margin: 0 auto;
     display: block;
     padding-top: 270px;
+    transform: translate(-5px,0px);
 }
 .title{
     font-size: 20px;
-    color: rgb(218, 218, 218);
+    color: white;
     margin-top: 45px;
     line-height: 40px;
     text-align: center;

@@ -65,7 +65,7 @@ export default {
     height: 900px;
     background: rgb(248, 248, 248);
     border:1px solid rgb(26, 26, 26);
-    display:none;
+    // display:none;
 }
 .sec_1{
     position: relative;

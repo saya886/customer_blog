@@ -45,9 +45,10 @@
                 {{ $t('h_25')}}</div> 
             </div>
             <div class="item item_mid">
-                <div class="item_d2 item_content_2">{{ $t('h_26')}}<br>{{ $t('h_29')}}<br> 
+                <div class="item_d2 item_content_2">{{ $t('h_26')}}<br>
 {{ $t('h_27')}}<br>
-{{ $t('h_28')}}</div>
+{{ $t('h_28')}}<br>
+{{ $t('h_29')}} </div>
                 <div class="item_move item_move_right">
                     <div class="item_content_3 item_content_img_3"></div>
                 </div>
