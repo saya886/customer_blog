@@ -116,4 +116,5 @@ export default {
     "b_1_5":"Find the key stakeholders and handle all logistics",
     "b_1_6":"Help connecting and manufacturing relationships",
     "b_1_7":"Talk to a Specialist",
+    "add_1":"More"
 }

@@ -112,7 +112,7 @@ export default {
                 this.error_msg = ""
                 this.$axios({
                     method: "get",
-                    url: "/comment/?name="+this.name+"&mail_addr="+this.mail+"&phone="+this.tel+"&content="+this.message,
+                    url: "/comment?name="+this.name+"&mail_addr="+this.mail+"&phone="+this.tel+"&content="+this.message,
                 }).then(response => {
                     console.log(response, "success");   // 成功的返回 
                     this.error_msg = this.$t('warn_msg_3')

@@ -37,7 +37,7 @@ export default {
     mounted (){
         this.$axios({
             method: "get",
-            url: "/testimonials",
+            url: "/testimonials/",
         }).then(response => {
             console.log(response, "success");   // 成功的返回
             this.data_list = response["data"]["data"]
@@ -91,7 +91,7 @@ export default {
     // background: rgba(255, 0, 0, 0.445);
     height: 700px;
     padding: 120px 140px 120px 140px;
-    display:none;
+    display:nones;
 }
 .item{
     // background: rgba(0, 0, 255, 0.384);

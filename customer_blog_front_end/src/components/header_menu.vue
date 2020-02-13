@@ -136,6 +136,7 @@ export default {
             }
 
             this.lang = lang_str;
+            location.reload()
         },
         change_route(path){
             this.$router.push("/" + path)

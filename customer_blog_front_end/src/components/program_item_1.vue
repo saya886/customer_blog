@@ -29,7 +29,7 @@ export default {
     mounted (){
         this.$axios({
             method: "get",
-            url: "/program",
+            url: "/program/",
         }).then(response => {
             console.log(response, "success");   // 成功的返回
             this.data_list = response["data"]["data"]

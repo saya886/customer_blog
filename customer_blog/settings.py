@@ -68,6 +68,7 @@ CORS_ALLOW_HEADERS = (
 'x-csrftoken',  
 'x-requested-with',  
 'Pragma', 
+'langc'
 ) 
 
 ROOT_URLCONF = 'customer_blog.urls'

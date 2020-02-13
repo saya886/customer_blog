@@ -20,6 +20,10 @@ class blog_instance(models.Model):
     blog_img = models.ImageField(upload_to ='uploads/' + datetime.datetime.now().strftime("%Y%m%d%H%M%S")+'/', height_field=None, width_field=None, max_length=1000,default="uploads/default_blog.png",help_text="图片的大小务必是342x215")
     content = RichTextUploadingField()
     
+    title_cn = models.TextField(default="")
+    author_cn = models.TextField(default="")
+    content_cn = RichTextUploadingField(default="")
+
     push_time = models.DateTimeField(auto_now=True)
 
     def __str__(self):
@@ -31,8 +35,8 @@ class blog_instance(models.Model):
 
 class program_instance(models.Model):
 
-    title_1 = models.TextField()
-    title_2 = models.TextField()
+    title_1 = models.TextField(default="")
+    title_2 = models.TextField(default="")
     desc = models.TextField(default="")
 
     program_img = models.ImageField(upload_to ='uploads/' + datetime.datetime.now().strftime("%Y%m%d%H%M%S")+'/', height_field=None, width_field=None, max_length=1000,default="uploads/default_program.png",help_text="")
@@ -41,6 +45,15 @@ class program_instance(models.Model):
     learning_objectives = RichTextUploadingField(default="")
     ltinerary = RichTextUploadingField(default="")
     details = RichTextUploadingField(default="")
+
+    title_1_cn = models.TextField(default="")
+    title_2_cn = models.TextField(default="")
+    desc_cn = models.TextField(default="")
+    content_cn = RichTextUploadingField(default="")
+
+    learning_objectives_cn = RichTextUploadingField(default="")
+    ltinerary_cn = RichTextUploadingField(default="")
+    details_cn = RichTextUploadingField(default="")
 
     push_time = models.DateTimeField(auto_now=True)
 

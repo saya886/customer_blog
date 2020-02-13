@@ -20,7 +20,7 @@
 
       </div>
 
-      <div @click="go_to_more(cate.name)" class="center_button">More</div>
+      <div @click="go_to_more(cate.name)" class="center_button">{{ $t('add_1')}}</div>
         </div>
       </div>
 
@@ -38,7 +38,7 @@ export default {
     mounted (){
         this.$axios({
             method: "get",
-            url: "/blog?type_categary=123",
+            url: "/blog?type_categary=nihao",
         }).then(response => {
             console.log(response, "success");   // 成功的返回
             this.blog_list = response["data"]["data"]
@@ -65,7 +65,7 @@ export default {
     height: 900px;
     background: rgb(248, 248, 248);
     border:1px solid rgb(26, 26, 26);
-    // display:none;
+    display:none;
 }
 .sec_1{
     position: relative;
